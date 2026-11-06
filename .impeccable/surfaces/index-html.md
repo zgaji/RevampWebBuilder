@@ -19,6 +19,8 @@ related_targets: []
 
 ## Direction contract
 
+REVISION (2026-11-06): the user found the canon build "a bit more common and simple" and chose an editorial-magazine treatment of the same world: split cover (stacked name, italic Metzger, photo bleeding right with caption), oversized "Get it sold.", portrait on an offset stone plate beside a large serif lede, staggered asymmetric photo spread with italic captions, a centered pull quote, navy services as ruled rows, and a giant serif phone number. Italic marks meaning only (name, sold, 28.5 million, community, service sub-lines). Signature motion: the cover photo unveils with a clip-path wipe while the gold rule draws in.
+
 THESIS: The category standard, played straight at luxury-brokerage craft (benchmarks: Sotheby's International Realty, Compass, The Agency). Light, calm, photo-led, with the brand carried by her brokerage's own navy and gold. It refuses themed or costume materials, heavy dark grounds, and template clutter.
 
 OWN-WORLD: White ground (#ffffff), with a warm stone section tint (#f5f3ef). Ink is near-black navy (#14202e) with muted slate (#5a6472). The Ridge navy (#0f2a44) fills the brand bands and the primary buttons. Ridge gold (#b08d3c) is for hairlines, rules, and small marks only, never for text on white. The display face is Bodoni Moda, a Didone that echoes her logo, with a light hand and generous tracking on small caps. Text is set in Archivo at normal width. Components have square corners, 1px hairlines, underline-style form fields, and generous white space. Photos stay rectangular, with no frames.

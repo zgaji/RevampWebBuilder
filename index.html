@@ -7,10 +7,16 @@
   <meta name="description" content="Marci Metzger, Pahrump Realtor with The Ridge Realty Group. A Realtor for nearly 3 decades: nearly 90 clients helped and $28.5 million closed in 2021. Call 206-919-6886.">
   <meta name="theme-color" content="#ffffff">
   <link rel="preload" href="assets/fonts/bodoni-moda-latin-var.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/bodoni-moda-italic-latin-var.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/archivo-latin-var.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  </svg>
+
   <a class="skip" href="#main">Skip to content</a>
 
   <header class="header" id="top">
@@ -28,7 +34,7 @@
       </nav>
       <a class="header__phone" href="tel:+12069196886">206-919-6886</a>
       <a class="btn btn--navy btn--sm header__call" href="tel:+12069196886">
-        <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        <svg aria-hidden="true"><use href="#i-phone"/></svg>
         <span>Call now</span>
       </a>
       <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav">
@@ -39,55 +45,60 @@
   </header>
 
   <main id="main">
-    <!-- Hero -->
+    <!-- Cover -->
     <section class="hero" aria-labelledby="hero-title">
-      <img class="hero__img" src="assets/img/mtn-falls-pond.jpg" alt="The Spring Mountains above a Pahrump golf-course pond with fountains" width="2560" height="1700" fetchpriority="high">
-      <div class="hero__content wrap">
-        <h1 class="hero__name" id="hero-title">Marci Metzger</h1>
+      <div class="hero__text">
+        <h1 class="hero__name" id="hero-title"><span>Marci</span> <em>Metzger</em></h1>
         <p class="hero__tenure">Realtor for nearly 3 decades</p>
         <p class="hero__firm">Pahrump Realtor <span aria-hidden="true">&middot;</span> The Ridge Realty Group</p>
         <div class="hero__actions">
-          <a class="btn btn--white" href="tel:+12069196886">
-            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <a class="btn btn--navy" href="tel:+12069196886">
+            <svg aria-hidden="true"><use href="#i-phone"/></svg>
             <span>Call 206-919-6886</span>
           </a>
-          <a class="btn btn--ghost" href="#search">Search listings</a>
+          <a class="btn btn--outline" href="#search">Search listings</a>
         </div>
       </div>
+      <figure class="hero__photo">
+        <img src="assets/img/mtn-falls-pond.jpg" alt="The Spring Mountains above a Pahrump golf-course pond with fountains" width="2560" height="1700" fetchpriority="high">
+        <figcaption>The Spring Mountains over the Pahrump Valley</figcaption>
+      </figure>
     </section>
 
     <!-- Get it sold / about -->
     <section class="sold" id="about" aria-labelledby="sold-title">
-      <div class="wrap sold__grid">
-        <figure class="portrait">
-          <img src="assets/img/marci.jpg" alt="Marci Metzger, smiling, in a navy blazer" width="1632" height="2449" loading="lazy">
-          <figcaption>
-            <span class="portrait__name">Marci Metzger</span>
-            <span>Realtor for nearly 3 decades &middot; <a href="tel:+12069196886">206-919-6886</a></span>
-          </figcaption>
-        </figure>
-
-        <div class="sold__body">
-          <h2 class="display" id="sold-title">Get it sold.</h2>
+      <div class="wrap">
+        <header class="sold__head">
+          <h2 class="display display--xl" id="sold-title">Get it <em>sold.</em></h2>
           <h3 class="sold__sub">Top Residential Sales Last 5&nbsp;Years</h3>
-          <p class="lede">We helped nearly 90 clients in 2021, and closed <strong>28.5 million</strong> in sales!</p>
+        </header>
 
-          <p class="sold__team">Our team works hard everyday to grow and learn, so that we may continue to excel in our market. Our clients deserve our best, &amp; we want to make sure our best is better every year.</p>
+        <div class="sold__spread">
+          <figure class="portrait">
+            <img src="assets/img/marci.jpg" alt="Marci Metzger, smiling, in a navy blazer" width="1632" height="2449" loading="lazy">
+            <figcaption>
+              <span class="portrait__name">Marci Metzger</span>
+              <span>Realtor for nearly 3 decades &middot; <a href="tel:+12069196886">206-919-6886</a></span>
+            </figcaption>
+          </figure>
 
-          <div class="pitches">
-            <article class="pitch">
-              <h3>Don't Just List it&hellip;</h3>
-              <p><strong>Get it SOLD!</strong> We exhaust every avenue to ensure our listings are at the fingertips of every possible buyer, getting you top dollar for your home.</p>
-            </article>
-            <article class="pitch">
-              <h3>Guide to Buyers</h3>
-              <p>Nobody knows the market like we do. Enjoy having a pro at your service. Market analysis, upgrades lists, contractors on speed dial, &amp; more!</p>
-            </article>
+          <div class="sold__body">
+            <p class="lede">We helped nearly 90 clients in 2021, and closed <em>28.5&nbsp;million</em> in sales!</p>
+            <p class="sold__team">Our team works hard everyday to grow and learn, so that we may continue to excel in our market. Our clients deserve our best, &amp; we want to make sure our best is better every year.</p>
+
+            <div class="pitches">
+              <article class="pitch">
+                <h3>Don't Just List&nbsp;it&hellip;</h3>
+                <p><strong>Get it SOLD!</strong> We exhaust every avenue to ensure our listings are at the fingertips of every possible buyer, getting you top dollar for your home.</p>
+              </article>
+              <article class="pitch">
+                <h3>Guide to Buyers</h3>
+                <p>Nobody knows the market like we do. Enjoy having a pro at your service. Market analysis, upgrades lists, contractors on speed dial, &amp; more!</p>
+              </article>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="wrap">
         <ul class="badges" aria-label="Affiliations">
           <li><img src="assets/img/badge-big-circle.png" alt="The Ridge Realty Group" width="2560" height="2560" loading="lazy"></li>
           <li><img src="assets/img/badge-realtor.jpg" alt="Realtor, member of the National Association of Realtors" width="412" height="369" loading="lazy"></li>
@@ -99,7 +110,7 @@
 
     <!-- Search -->
     <section class="search tint" id="search" aria-labelledby="search-title">
-      <div class="wrap">
+      <div class="wrap search__grid">
         <div class="search__head">
           <h2 class="display" id="search-title">Find Your Dream Home</h2>
           <p>Search current Pahrump listings on Marci's site. Start with what matters to you here.</p>
@@ -120,6 +131,19 @@
               <option>Manufactured</option>
               <option>Land</option>
               <option>Commercial</option>
+            </select>
+          </label>
+          <label class="field">
+            <span>Sort By</span>
+            <select name="sort">
+              <option>Newest</option>
+              <option>Oldest</option>
+              <option>Least Expensive to Most</option>
+              <option>Most Expensive to Least</option>
+              <option>Bedrooms (Low to High)</option>
+              <option>Bedrooms (High to Low)</option>
+              <option>Bathrooms (Low to High)</option>
+              <option>Bathrooms (High to Low)</option>
             </select>
           </label>
           <label class="field">
@@ -145,21 +169,11 @@
             <span>Max Price</span>
             <input type="text" name="max" inputmode="numeric" placeholder="No max">
           </label>
-          <label class="field">
-            <span>Sort By</span>
-            <select name="sort">
-              <option>Newest</option>
-              <option>Oldest</option>
-              <option>Least Expensive to Most</option>
-              <option>Most Expensive to Least</option>
-              <option>Bedrooms (Low to High)</option>
-              <option>Bedrooms (High to Low)</option>
-              <option>Bathrooms (Low to High)</option>
-              <option>Bathrooms (High to Low)</option>
-            </select>
-          </label>
           <div class="finder__foot">
-            <button class="btn btn--navy" type="submit">Search Now</button>
+            <button class="btn btn--navy" type="submit">
+              <span>Search Now</span>
+              <svg aria-hidden="true"><use href="#i-arrow"/></svg>
+            </button>
             <p class="finder__note">Opens Marci's live listings in a new tab, where you can apply these filters to current MLS results.</p>
           </div>
         </form>
@@ -174,16 +188,25 @@
           <p>Homes and neighborhoods from Marci's listings across the Pahrump Valley.</p>
         </div>
         <ul class="tiles">
-          <li class="tile tile--feature"><button type="button"><img src="assets/img/gallery-roseworthy-52.jpg" alt="Aerial view of a resort-style community clubhouse with pools beside a golf-course lake, mountains beyond" width="1024" height="682" loading="lazy"></button><span class="tile__cap">Roseworthy</span></li>
-          <li class="tile"><button type="button"><img src="assets/img/gallery-ailanto-45.jpg" alt="Single-story tile-roof home with a backyard pool, snow-capped mountains on the horizon" width="1024" height="682" loading="lazy"></button><span class="tile__cap">Ailanto</span></li>
-          <li class="tile"><button type="button"><img src="assets/img/gallery-ailanto-14.jpg" alt="Sunroom with floor-to-ceiling windows onto a desert-landscaped yard and a red leather chair" width="1024" height="682" loading="lazy"></button><span class="tile__cap">Ailanto</span></li>
-          <li class="tile"><button type="button"><img src="assets/img/gallery-ailanto-50.jpg" alt="Aerial view of a home's walled backyard with pool and spa, facing the mountains" width="1024" height="682" loading="lazy"></button><span class="tile__cap">Ailanto</span></li>
-          <li class="tile"><button type="button"><img src="assets/img/gallery-beacon-ridge-41.jpg" alt="Row of modern single-story homes along a golf course and pond" width="1024" height="683" loading="lazy"></button><span class="tile__cap">E Beacon Ridge</span></li>
-          <li class="tile tile--wide"><button type="button"><img src="assets/img/gallery-beacon-ridge-53.jpg" alt="Community clubhouse with tennis and pickleball courts beside the golf course" width="1024" height="683" loading="lazy"></button><span class="tile__cap">E Beacon Ridge</span></li>
-          <li class="tile tile--wide"><button type="button"><img src="assets/img/gallery-beacon-ridge-54.jpg" alt="Clubhouse entry roundabout and courts with the Spring Mountains behind" width="1024" height="682" loading="lazy"></button><span class="tile__cap">E Beacon Ridge</span></li>
+          <li class="tile tile--a"><button type="button"><img src="assets/img/gallery-roseworthy-52.jpg" alt="Aerial view of a resort-style community clubhouse with pools beside a golf-course lake, mountains beyond" width="1024" height="682" loading="lazy"></button><p class="tile__text"><span class="tile__cap">Roseworthy</span> <span class="tile__desc">Clubhouse and pools on the lake</span></p></li>
+          <li class="tile tile--b"><button type="button"><img src="assets/img/gallery-ailanto-14.jpg" alt="Sunroom with floor-to-ceiling windows onto a desert-landscaped yard and a red leather chair" width="1024" height="682" loading="lazy"></button><p class="tile__text"><span class="tile__cap">Ailanto</span> <span class="tile__desc">The sunroom</span></p></li>
+          <li class="tile tile--c"><button type="button"><img src="assets/img/gallery-ailanto-45.jpg" alt="Single-story tile-roof home with a backyard pool, snow-capped mountains on the horizon" width="1024" height="682" loading="lazy"></button><p class="tile__text"><span class="tile__cap">Ailanto</span> <span class="tile__desc">Pool, patio and mountain views</span></p></li>
+          <li class="tile tile--d"><button type="button"><img src="assets/img/gallery-ailanto-50.jpg" alt="Aerial view of a home's walled backyard with pool and spa, facing the mountains" width="1024" height="682" loading="lazy"></button><p class="tile__text"><span class="tile__cap">Ailanto</span> <span class="tile__desc">Pool and spa from above</span></p></li>
+          <li class="tile tile--e"><button type="button"><img src="assets/img/gallery-beacon-ridge-41.jpg" alt="Row of modern single-story homes along a golf course and pond" width="1024" height="683" loading="lazy"></button><p class="tile__text"><span class="tile__cap">E Beacon Ridge</span> <span class="tile__desc">Homes along the fairway</span></p></li>
+          <li class="tile tile--f"><button type="button"><img src="assets/img/gallery-beacon-ridge-53.jpg" alt="Community clubhouse with tennis and pickleball courts beside the golf course" width="1024" height="683" loading="lazy"></button><p class="tile__text"><span class="tile__cap">E Beacon Ridge</span> <span class="tile__desc">Clubhouse and courts</span></p></li>
+          <li class="tile tile--g"><button type="button"><img src="assets/img/gallery-beacon-ridge-54.jpg" alt="Clubhouse entry roundabout and courts with the Spring Mountains behind" width="1024" height="682" loading="lazy"></button><p class="tile__text"><span class="tile__cap">E Beacon Ridge</span> <span class="tile__desc">Arriving at the clubhouse</span></p></li>
         </ul>
       </div>
     </section>
+
+    <!-- Pull quote -->
+    <aside class="quote" aria-label="From Marci's team">
+      <div class="wrap">
+        <blockquote>
+          <p>We live, work, and play in this <em>community.</em></p>
+        </blockquote>
+      </div>
+    </aside>
 
     <!-- Services -->
     <section class="services navy" id="services" aria-labelledby="services-title">
@@ -191,21 +214,21 @@
         <div class="services__head">
           <h2 class="display" id="services-title">Our Services</h2>
           <a class="btn btn--white" href="tel:+12069196886">
-            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <svg aria-hidden="true"><use href="#i-phone"/></svg>
             <span>Talk to Marci</span>
           </a>
         </div>
-        <div class="services__grid">
+        <div class="services__list">
           <article class="service">
-            <h3>Real Estate Done Right</h3>
+            <h3>Real Estate <em>Done Right</em></h3>
             <p>Nervous about your property adventure? Don&rsquo;t be. Whether you're getting ready to buy or sell your residence, looking at investment properties, or just curious about the markets, our team ensures you get the best experience possible!</p>
           </article>
           <article class="service">
-            <h3>Commercial &amp; Residential</h3>
+            <h3>Commercial <em>&amp; Residential</em></h3>
             <p>Large or small, condo or mansion, we can find it and get at the price that's right. Fixer-uppers? Luxury? We can help with all of it! We live, work, and play in this community. Happy to help you find where to put your hard-earned dollars.</p>
           </article>
           <article class="service">
-            <h3>Rely on Expertise</h3>
+            <h3>Rely on <em>Expertise</em></h3>
             <p>If you have questions about affordability, credit, and loan options, trust us to connect you with the right people to get the answers you need in a timely fashion. We make sure you feel confident and educated every step of the way.</p>
           </article>
         </div>
@@ -214,57 +237,62 @@
 
     <!-- Contact -->
     <section class="contact" id="contact" aria-labelledby="contact-title">
-      <div class="wrap contact__grid">
-        <div class="contact__info">
+      <div class="wrap">
+        <div class="contact__head">
           <h2 class="display" id="contact-title">Call or Visit</h2>
           <a class="contact__phone" href="tel:+12069196886">(206) 919-6886</a>
           <p class="contact__firm">Marci Metzger &ndash; The Ridge Realty Group</p>
-          <dl class="facts">
-            <div>
-              <dt>Office</dt>
-              <dd>3190 HW-160, Suite F<br>Pahrump, Nevada 89048, United States<br>
-                <a href="https://www.google.com/maps/dir/?api=1&amp;destination=3190+HW-160+Suite+F+Pahrump+NV+89048" target="_blank" rel="noopener">Get directions</a></dd>
-            </div>
-            <div>
-              <dt>Office Hours</dt>
-              <dd>Open daily 8:00 am &ndash; 7:00 pm <span class="open-state" id="open-state" hidden></span><br>
-                Appointments outside office hours available upon request. Just call!</dd>
-            </div>
-          </dl>
-          <ul class="social" aria-label="Marci on social media">
-            <li><a href="https://www.facebook.com/MarciHomes/" target="_blank" rel="noopener">Facebook</a></li>
-            <li><a href="https://www.instagram.com/marcimetzger_theridge/" target="_blank" rel="noopener">Instagram</a></li>
-            <li><a href="https://www.linkedin.com/in/marci-metzger-30642496/" target="_blank" rel="noopener">LinkedIn</a></li>
-            <li><a href="https://www.yelp.com/biz/xr3yQN_m2SgO0R_7S6p62w" target="_blank" rel="noopener">Yelp</a></li>
-          </ul>
         </div>
 
-        <form class="message" id="message-form" novalidate aria-labelledby="message-title">
-          <h3 id="message-title">Send Message</h3>
-          <label class="field">
-            <span>Name</span>
-            <input type="text" name="name" autocomplete="name">
-          </label>
-          <label class="field">
-            <span>Email <abbr title="required">*</abbr></span>
-            <input type="email" name="email" autocomplete="email" required aria-describedby="email-error">
-            <span class="field__error" id="email-error" aria-live="polite"></span>
-          </label>
-          <label class="field">
-            <span>Message <small>(optional)</small></span>
-            <textarea name="message" rows="3" placeholder="Buying, selling, or just have a question?"></textarea>
-          </label>
-          <button class="btn btn--navy" type="submit">Send</button>
-          <p class="message__note" id="message-note">On a phone, Send opens your messaging app with this note addressed to Marci.</p>
-          <div class="composed" id="composed" hidden>
-            <p><strong>Your message is ready.</strong> Copy it into a text to (206) 919-6886, or call Marci directly.</p>
-            <textarea id="composed-text" rows="5" readonly aria-label="Composed message"></textarea>
-            <div class="composed__actions">
-              <button class="btn btn--navy btn--sm" type="button" id="copy-btn">Copy message</button>
-              <a class="btn btn--outline btn--sm" href="tel:+12069196886">Call now</a>
-            </div>
+        <div class="contact__grid">
+          <div class="contact__info">
+            <dl class="facts">
+              <div>
+                <dt>Office</dt>
+                <dd>3190 HW-160, Suite F<br>Pahrump, Nevada 89048, United States<br>
+                  <a href="https://www.google.com/maps/dir/?api=1&amp;destination=3190+HW-160+Suite+F+Pahrump+NV+89048" target="_blank" rel="noopener">Get directions</a></dd>
+              </div>
+              <div>
+                <dt>Office Hours</dt>
+                <dd>Open daily 8:00 am &ndash; 7:00 pm <span class="open-state" id="open-state" hidden></span><br>
+                  Appointments outside office hours available upon request. Just call!</dd>
+              </div>
+            </dl>
+            <ul class="social" aria-label="Marci on social media">
+              <li><a href="https://www.facebook.com/MarciHomes/" target="_blank" rel="noopener">Facebook</a></li>
+              <li><a href="https://www.instagram.com/marcimetzger_theridge/" target="_blank" rel="noopener">Instagram</a></li>
+              <li><a href="https://www.linkedin.com/in/marci-metzger-30642496/" target="_blank" rel="noopener">LinkedIn</a></li>
+              <li><a href="https://www.yelp.com/biz/xr3yQN_m2SgO0R_7S6p62w" target="_blank" rel="noopener">Yelp</a></li>
+            </ul>
           </div>
-        </form>
+
+          <form class="message" id="message-form" novalidate aria-labelledby="message-title">
+            <h3 id="message-title">Send Message</h3>
+            <label class="field">
+              <span>Name</span>
+              <input type="text" name="name" autocomplete="name">
+            </label>
+            <label class="field">
+              <span>Email <abbr title="required">*</abbr></span>
+              <input type="email" name="email" autocomplete="email" required aria-describedby="email-error">
+              <span class="field__error" id="email-error" aria-live="polite"></span>
+            </label>
+            <label class="field">
+              <span>Message <small>(optional)</small></span>
+              <textarea name="message" rows="3" placeholder="Buying, selling, or just have a question?"></textarea>
+            </label>
+            <button class="btn btn--navy" type="submit">Send</button>
+            <p class="message__note" id="message-note">On a phone, Send opens your messaging app with this note addressed to Marci.</p>
+            <div class="composed" id="composed" hidden>
+              <p><strong>Your message is ready.</strong> Copy it into a text to (206) 919-6886, or call Marci directly.</p>
+              <textarea id="composed-text" rows="5" readonly aria-label="Composed message"></textarea>
+              <div class="composed__actions">
+                <button class="btn btn--navy btn--sm" type="button" id="copy-btn">Copy message</button>
+                <a class="btn btn--outline btn--sm" href="tel:+12069196886">Call now</a>
+              </div>
+            </div>
+          </form>
+        </div>
       </div>
     </section>
   </main>

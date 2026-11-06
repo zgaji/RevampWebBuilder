@@ -67,7 +67,7 @@ For the assignment: the revamp has to show the candidate's own design judgment. 
 - Voice: warm, plain-spoken, confident, and local, with exclamation points and "we/our team". Keep the client's copy intact. Fix only clear typos ("put you hard-earned" → "your"; "get at the price" stays unless confirmed).
 - Social links: Facebook, Instagram, LinkedIn, and Yelp (URLs in `docs/reference-content.md`).
 - Equal Housing Opportunity mark: a real-estate compliance mark. Keep it visible.
-- **Standing visual preference (user, 2026-11-06):** clean and elegant, light and airy, at the polish level of luxury brokerages (Sotheby's International Realty, Compass, The Agency). The user rejected a themed direction (corten "ranch gate") as costume-y, too dark and heavy, and not elegant. Avoid themed or costume worlds and heavy dark grounds. The Ridge Realty Group's own navy and gold (from its logo) are the brand colors to draw from.
+- **Standing visual preference (user, 2026-11-06):** clean and elegant, light and airy, at the polish level of luxury brokerages (Sotheby's International Realty, Compass, The Agency). The user rejected a themed direction (corten "ranch gate") as costume-y, too dark and heavy, and not elegant. Avoid themed or costume worlds and heavy dark grounds. The Ridge Realty Group's own navy and gold (from its logo) are the brand colors to draw from. **Follow-up (user, 2026-11-06):** the category-standard version read as "a bit more common and simple"; the user chose an **editorial magazine** direction (oversized Bodoni with purposeful italics, asymmetric photo spreads, a pull quote, large typographic moments) while keeping the clean, light navy-and-gold world.
 
 ## Evidence on Hand
 

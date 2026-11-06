@@ -11,6 +11,24 @@
         ],
         "createdAt": "2026-11-06T10:17:03.251Z",
         "reason": "False positive: .search and .services center a padded .wrap (checked at 1440/768/390 renders)"
+      },
+      {
+        "rule": "italic-serif-display",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-11-06T13:42:05.527Z",
+        "reason": "Sanctioned: user chose the editorial-magazine direction (2026-11-06); italics limited to the name, 'sold.', the lede figure, pull quote and service sub-lines; routine headings are upright"
+      },
+      {
+        "rule": "tight-leading",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-11-06T13:42:05.749Z",
+        "reason": "Display-only: 1.1 leading is on the 3rem serif lede, not body text (body is 1.65)"
       }
     ]
   }
