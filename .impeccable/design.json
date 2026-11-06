@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-06T10:26:51.000Z",
+  "generatedAt": "2026-11-06T13:45:42.215Z",
   "title": "Design System: Marci Metzger Homes",
   "extensions": {
     "colorMeta": {
@@ -68,6 +68,22 @@
           "#f5eedd"
         ]
       },
+      "gold-ink": {
+        "role": "secondary",
+        "displayName": "Gold Ink",
+        "canonical": "#85661f",
+        "oklch": "oklch(52.8% 0.095 84.1)",
+        "tonalRamp": [
+          "#100a02",
+          "#2f230b",
+          "#513f19",
+          "#765d28",
+          "#9d7d3a",
+          "#bba16e",
+          "#dbc79f",
+          "#fbedd1"
+        ]
+      },
       "white": {
         "role": "neutral",
         "displayName": "White",
@@ -114,6 +130,22 @@
           "#a19e99",
           "#c6c4c0",
           "#efeeec"
+        ]
+      },
+      "field-stroke": {
+        "role": "neutral",
+        "displayName": "Field Stroke",
+        "canonical": "#858b95",
+        "oklch": "oklch(63.5% 0.017 260.7)",
+        "tonalRamp": [
+          "#0a0b0d",
+          "#232529",
+          "#3f4248",
+          "#5d6169",
+          "#7d838c",
+          "#a0a5ae",
+          "#c5c9d0",
+          "#eceff3"
         ]
       },
       "ink": {
@@ -164,6 +196,36 @@
           "#f1eee7"
         ]
       },
+      "on-navy-soft": {
+        "role": "neutral",
+        "displayName": "Soft Linen",
+        "canonical": "rgba(244, 241, 234, .78)",
+        "tonalRamp": [
+          "#0d0b07",
+          "#26241f",
+          "#423f3a",
+          "#605d57",
+          "#807d77",
+          "#a19e98",
+          "#c7c4bd",
+          "#f1eee7"
+        ]
+      },
+      "navy-line": {
+        "role": "neutral",
+        "displayName": "Navy Hairline",
+        "canonical": "rgba(244, 241, 234, .18)",
+        "tonalRamp": [
+          "#0d0b07",
+          "#26241f",
+          "#423f3a",
+          "#605d57",
+          "#807d77",
+          "#a19e98",
+          "#c7c4bd",
+          "#f1eee7"
+        ]
+      },
       "error": {
         "role": "neutral",
         "displayName": "Brick",
@@ -179,78 +241,51 @@
           "#f1b3a3",
           "#ffe9e4"
         ]
-      },
-      "on-navy-soft": {
-        "role": "neutral",
-        "displayName": "Soft Linen",
-        "canonical": "rgba(244, 241, 234, .76)",
-        "tonalRamp": [
-          "#0d0b07",
-          "#26241f",
-          "#423f3a",
-          "#605d57",
-          "#807d77",
-          "#a19e98",
-          "#c7c4bd",
-          "#f1eee7"
-        ]
-      },
-      "navy-line": {
-        "role": "neutral",
-        "displayName": "Navy Hairline",
-        "canonical": "rgba(255, 255, 255, .16)",
-        "tonalRamp": [
-          "#0b0b0b",
-          "#242424",
-          "#404040",
-          "#5d5d5d",
-          "#7d7d7d",
-          "#9e9e9e",
-          "#c4c4c4",
-          "#eeeeee"
-        ]
       }
     },
     "typographyMeta": {
+      "display-xl": {
+        "displayName": "Display XL",
+        "purpose": "\"Get it sold.\" headline; siblings: the stacked cover name and the giant contact phone number."
+      },
       "display": {
         "displayName": "Display",
-        "purpose": "Marci's name in the hero only, white on the photo."
+        "purpose": "Upright section headings; navy on light grounds, white on navy."
       },
-      "headline": {
-        "displayName": "Headline",
-        "purpose": "Section headings; navy on light grounds, white on navy."
+      "pull-quote": {
+        "displayName": "Pull Quote",
+        "purpose": "Centered community quote, max 17ch, one Gold Ink italic word."
       },
       "lede": {
         "displayName": "Lede",
-        "purpose": "The proof sentence, max 30ch, its figure in 600 navy."
+        "purpose": "Proof sentence beside the portrait; its figure in Gold Ink italic."
       },
       "title": {
         "displayName": "Title",
-        "purpose": "Card headings in pitches, services and the message panel."
+        "purpose": "Service row titles; second line breaks to Soft Gold italic."
+      },
+      "title-sm": {
+        "displayName": "Title Small",
+        "purpose": "Pitch titles, italic, under gold rules."
       },
       "subtitle": {
         "displayName": "Subtitle",
-        "purpose": "Serif sub-lines: sales subtitle, portrait name, hero tenure."
+        "purpose": "Italic serif secondary voice: sub-head, tenure, portrait name, gallery descriptions, cover caption."
       },
       "body": {
         "displayName": "Body",
-        "purpose": "Running text, 42-62ch; 1rem under 600px."
+        "purpose": "Running text, 36-58ch; 1rem under 600px; drop cap on the team paragraph."
       },
       "label": {
         "displayName": "Label",
-        "purpose": "Buttons, nav links (500), social links, hero firm line; uppercase."
+        "purpose": "Buttons, nav links (500), social links, cover firm line; uppercase."
       },
       "label-sm": {
         "displayName": "Label Small",
-        "purpose": "Field labels, fact terms, gallery captions (500); uppercase."
+        "purpose": "Field labels, fact terms, small buttons, gallery place names; uppercase."
       }
     },
     "shadows": [
-      {
-        "name": "finder-lift",
-        "value": "0 24px 48px -32px rgba(15, 42, 68, .35)",
-        "purpose": "The white search card floating on the stone section."
-      },
       {
         "name": "panel-drop",
         "value": "0 20px 30px -20px rgba(15, 42, 68, .3)",
@@ -269,23 +304,28 @@
         "purpose": "The single easing curve for every animation and transition."
       },
       {
+        "name": "unveil",
+        "value": "clip-path inset(0 0 0 100%) to inset(0), 1.5s",
+        "purpose": "The cover photograph wiping in from the right edge, once on load."
+      },
+      {
         "name": "rule-in",
-        "value": "scaleX(0) to 1, 1.2s, .2s delay",
-        "purpose": "The hero gold rule drawing in from the left, once on load."
+        "value": "scaleX(0) to 1, 1.1s, .5s delay",
+        "purpose": "The cover gold rule drawing in from the left beside the tenure line."
       },
       {
         "name": "rise",
-        "value": "opacity 0 and translateY(12px) to rest, 1s, staggered 0 / .1s / .18s / .28s",
-        "purpose": "Hero name, tenure, firm line and actions rising once on load."
+        "value": "opacity 0 and translateY(14px) to rest, 1s, staggered 0 / .12s / .2s / .3s",
+        "purpose": "Cover name, tenure, firm line and actions rising once on load."
       },
       {
         "name": "state",
         "value": ".2s-.35s",
-        "purpose": "Button colors (.25s), link color (.2s), nav underline and mobile panel clip-path (.35s)."
+        "purpose": "Button colors (.25s), link color (.2s), nav underline, arrow nudge and mobile panel clip-path (.35s)."
       },
       {
         "name": "tile-zoom",
-        "value": "scale(1.035), .9s",
+        "value": "scale(1.04), 1s",
         "purpose": "Gallery photo on hover or focus."
       },
       {
@@ -308,17 +348,17 @@
       {
         "name": "md",
         "value": "960px",
-        "purpose": "Contact and services stack."
+        "purpose": "Cover stacks photo-first (16:9); search and contact stack; search heading unsticks."
       },
       {
         "name": "sm",
         "value": "860px",
-        "purpose": "Menu button, 4rem header, two-column finder and gallery."
+        "purpose": "Menu button, 4rem header, single-column pitches and service rows, two-column gallery with feature tiles full width."
       },
       {
         "name": "xs",
         "value": "600px",
-        "purpose": "Single column, full-width hero buttons, icon-only Call."
+        "purpose": "1rem body, 4:3 cover photo, full-width cover buttons, single-column sold spread, finder and facts, icon-only Call."
       }
     ]
   },
@@ -327,41 +367,33 @@
       "name": "Navy Button",
       "kind": "button",
       "refersTo": "button-navy",
-      "description": "Primary action on light grounds: call, search, send.",
-      "html": "<a class=\"ds-btn ds-btn-navy\" href=\"#\"><svg aria-hidden=\"true\" viewBox=\"0 0 24 24\"><path d=\"M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z\"/></svg><span>Call now</span></a>",
-      "css": ":host{--white:#ffffff;--stone:#f5f3ef;--line:#e4e0d8;--ink:#14202e;--slate:#5a6472;--navy:#0f2a44;--navy-deep:#0a1e31;--on-navy:#f4f1ea;--gold:#b08d3c;--gold-soft:#d6bb7a;--error:#a3341b;--serif:'Bodoni Moda','Didot',Georgia,serif;--sans:'Archivo',system-ui,sans-serif;--ease:cubic-bezier(.16,1,.3,1);}.ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:.6rem;min-height:3.25rem;padding:.8rem 1.6rem;border:1px solid transparent;border-radius:0;font-family:var(--sans);font-size:.8rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;white-space:nowrap;cursor:pointer;transition:background-color .25s var(--ease),color .25s var(--ease),border-color .25s var(--ease);}.ds-btn svg{width:1.05rem;height:1.05rem;flex:none;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;}.ds-btn:focus-visible{outline:2px solid var(--navy);outline-offset:3px;}.ds-btn-navy{background:var(--navy);color:var(--white);}.ds-btn-navy:hover{background:var(--navy-deep);}"
-    },
-    {
-      "name": "White Button",
-      "kind": "button",
-      "refersTo": "button-white",
-      "description": "Primary action on the hero photo and on navy bands; the focus ring turns soft gold there.",
-      "html": "<div class=\"ds-band\"><a class=\"ds-btn ds-btn-white\" href=\"#\"><svg aria-hidden=\"true\" viewBox=\"0 0 24 24\"><path d=\"M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z\"/></svg><span>Talk to Marci</span></a></div>",
-      "css": ":host{--white:#ffffff;--stone:#f5f3ef;--line:#e4e0d8;--ink:#14202e;--slate:#5a6472;--navy:#0f2a44;--navy-deep:#0a1e31;--on-navy:#f4f1ea;--gold:#b08d3c;--gold-soft:#d6bb7a;--error:#a3341b;--serif:'Bodoni Moda','Didot',Georgia,serif;--sans:'Archivo',system-ui,sans-serif;--ease:cubic-bezier(.16,1,.3,1);}.ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:.6rem;min-height:3.25rem;padding:.8rem 1.6rem;border:1px solid transparent;border-radius:0;font-family:var(--sans);font-size:.8rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;white-space:nowrap;cursor:pointer;transition:background-color .25s var(--ease),color .25s var(--ease),border-color .25s var(--ease);}.ds-btn svg{width:1.05rem;height:1.05rem;flex:none;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;}.ds-btn:focus-visible{outline:2px solid var(--navy);outline-offset:3px;}.ds-band{display:flex;flex-wrap:wrap;gap:.75rem;padding:1.5rem;background:var(--navy);}.ds-band :focus-visible{outline-color:var(--gold-soft);}.ds-btn-white{background:var(--white);color:var(--navy);}.ds-btn-white:hover{background:var(--stone);}"
-    },
-    {
-      "name": "Ghost Button",
-      "kind": "button",
-      "refersTo": "button-ghost",
-      "description": "Secondary action on the hero photo only.",
-      "html": "<div class=\"ds-band\"><a class=\"ds-btn ds-btn-ghost\" href=\"#\">Search listings</a></div>",
-      "css": ":host{--white:#ffffff;--stone:#f5f3ef;--line:#e4e0d8;--ink:#14202e;--slate:#5a6472;--navy:#0f2a44;--navy-deep:#0a1e31;--on-navy:#f4f1ea;--gold:#b08d3c;--gold-soft:#d6bb7a;--error:#a3341b;--serif:'Bodoni Moda','Didot',Georgia,serif;--sans:'Archivo',system-ui,sans-serif;--ease:cubic-bezier(.16,1,.3,1);}.ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:.6rem;min-height:3.25rem;padding:.8rem 1.6rem;border:1px solid transparent;border-radius:0;font-family:var(--sans);font-size:.8rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;white-space:nowrap;cursor:pointer;transition:background-color .25s var(--ease),color .25s var(--ease),border-color .25s var(--ease);}.ds-btn svg{width:1.05rem;height:1.05rem;flex:none;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;}.ds-btn:focus-visible{outline:2px solid var(--navy);outline-offset:3px;}.ds-band{display:flex;flex-wrap:wrap;gap:.75rem;padding:1.5rem;background:var(--navy);}.ds-band :focus-visible{outline-color:var(--gold-soft);}.ds-btn-ghost{background:transparent;color:var(--white);border-color:rgba(255,255,255,.75);}.ds-btn-ghost:hover{background:rgba(255,255,255,.12);border-color:var(--white);}"
+      "description": "Primary action on light grounds: call, search, send. A trailing arrow nudges right on hover.",
+      "html": "<a class=\"ds-btn ds-btn-navy\" href=\"#\"><span>Search Now</span><svg aria-hidden=\"true\" viewBox=\"0 0 24 24\"><path d=\"M5 12h14M13 6l6 6-6 6\"/></svg></a>",
+      "css": ":host{--white:#ffffff;--stone:#f5f3ef;--line:#e4e0d8;--ink:#14202e;--slate:#5a6472;--navy:#0f2a44;--navy-deep:#0a1e31;--navy-line:rgba(244,241,234,.18);--on-navy:#f4f1ea;--on-navy-soft:rgba(244,241,234,.78);--gold:#b08d3c;--gold-soft:#d6bb7a;--gold-ink:#85661f;--error:#a3341b;--serif:'Bodoni Moda','Didot',Georgia,serif;--sans:'Archivo',system-ui,sans-serif;--ease:cubic-bezier(.16,1,.3,1);}.ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:.65rem;min-height:3.25rem;padding:.8rem 1.6rem;border:1px solid transparent;border-radius:0;font-family:var(--sans);font-size:.8rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;white-space:nowrap;cursor:pointer;transition:background-color .25s var(--ease),color .25s var(--ease),border-color .25s var(--ease);}.ds-btn svg{width:1.05rem;height:1.05rem;flex:none;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;transition:transform .35s var(--ease);}.ds-btn:hover>svg:last-child{transform:translateX(3px);}.ds-btn:focus-visible{outline:2px solid var(--navy);outline-offset:3px;}.ds-btn-navy{background:var(--navy);color:var(--white);}.ds-btn-navy:hover{background:var(--navy-deep);}"
     },
     {
       "name": "Outline Button",
       "kind": "button",
       "refersTo": "button-outline",
-      "description": "Small secondary action beside a navy button on light grounds.",
-      "html": "<a class=\"ds-btn ds-btn-outline\" href=\"#\">Call now</a>",
-      "css": ":host{--white:#ffffff;--stone:#f5f3ef;--line:#e4e0d8;--ink:#14202e;--slate:#5a6472;--navy:#0f2a44;--navy-deep:#0a1e31;--on-navy:#f4f1ea;--gold:#b08d3c;--gold-soft:#d6bb7a;--error:#a3341b;--serif:'Bodoni Moda','Didot',Georgia,serif;--sans:'Archivo',system-ui,sans-serif;--ease:cubic-bezier(.16,1,.3,1);}.ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:.6rem;min-height:3.25rem;padding:.8rem 1.6rem;border:1px solid transparent;border-radius:0;font-family:var(--sans);font-size:.8rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;white-space:nowrap;cursor:pointer;transition:background-color .25s var(--ease),color .25s var(--ease),border-color .25s var(--ease);}.ds-btn svg{width:1.05rem;height:1.05rem;flex:none;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;}.ds-btn:focus-visible{outline:2px solid var(--navy);outline-offset:3px;}.ds-btn-outline{min-height:2.6rem;padding:.55rem 1.1rem;font-size:.72rem;background:transparent;color:var(--navy);border-color:var(--navy);}.ds-btn-outline:hover{background:var(--navy);color:var(--white);}"
+      "description": "Second action beside a navy button on light grounds (the cover, the composed message).",
+      "html": "<a class=\"ds-btn ds-btn-outline\" href=\"#\">Search listings</a>",
+      "css": ":host{--white:#ffffff;--stone:#f5f3ef;--line:#e4e0d8;--ink:#14202e;--slate:#5a6472;--navy:#0f2a44;--navy-deep:#0a1e31;--navy-line:rgba(244,241,234,.18);--on-navy:#f4f1ea;--on-navy-soft:rgba(244,241,234,.78);--gold:#b08d3c;--gold-soft:#d6bb7a;--gold-ink:#85661f;--error:#a3341b;--serif:'Bodoni Moda','Didot',Georgia,serif;--sans:'Archivo',system-ui,sans-serif;--ease:cubic-bezier(.16,1,.3,1);}.ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:.65rem;min-height:3.25rem;padding:.8rem 1.6rem;border:1px solid transparent;border-radius:0;font-family:var(--sans);font-size:.8rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;white-space:nowrap;cursor:pointer;transition:background-color .25s var(--ease),color .25s var(--ease),border-color .25s var(--ease);}.ds-btn svg{width:1.05rem;height:1.05rem;flex:none;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;transition:transform .35s var(--ease);}.ds-btn:hover>svg:last-child{transform:translateX(3px);}.ds-btn:focus-visible{outline:2px solid var(--navy);outline-offset:3px;}.ds-btn-outline{background:transparent;color:var(--navy);border-color:var(--navy);}.ds-btn-outline:hover{background:var(--navy);color:var(--white);}"
     },
     {
-      "name": "Underline Field",
+      "name": "White Button",
+      "kind": "button",
+      "refersTo": "button-white",
+      "description": "Primary action on the navy services band; the focus ring turns soft gold there.",
+      "html": "<div class=\"ds-band\"><a class=\"ds-btn ds-btn-white\" href=\"#\"><svg aria-hidden=\"true\" viewBox=\"0 0 24 24\"><path d=\"M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z\"/></svg><span>Talk to Marci</span></a></div>",
+      "css": ":host{--white:#ffffff;--stone:#f5f3ef;--line:#e4e0d8;--ink:#14202e;--slate:#5a6472;--navy:#0f2a44;--navy-deep:#0a1e31;--navy-line:rgba(244,241,234,.18);--on-navy:#f4f1ea;--on-navy-soft:rgba(244,241,234,.78);--gold:#b08d3c;--gold-soft:#d6bb7a;--gold-ink:#85661f;--error:#a3341b;--serif:'Bodoni Moda','Didot',Georgia,serif;--sans:'Archivo',system-ui,sans-serif;--ease:cubic-bezier(.16,1,.3,1);}.ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:.65rem;min-height:3.25rem;padding:.8rem 1.6rem;border:1px solid transparent;border-radius:0;font-family:var(--sans);font-size:.8rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;white-space:nowrap;cursor:pointer;transition:background-color .25s var(--ease),color .25s var(--ease),border-color .25s var(--ease);}.ds-btn svg{width:1.05rem;height:1.05rem;flex:none;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;transition:transform .35s var(--ease);}.ds-btn:hover>svg:last-child{transform:translateX(3px);}.ds-btn:focus-visible{outline:2px solid var(--navy);outline-offset:3px;}.ds-band{display:flex;padding:1.5rem;background:var(--navy);}.ds-band .ds-btn:focus-visible{outline-color:var(--gold-soft);}.ds-btn-white{background:var(--white);color:var(--navy);}.ds-btn-white:hover{background:var(--stone);}"
+    },
+    {
+      "name": "Underline Fields",
       "kind": "input",
       "refersTo": "input-underline",
-      "description": "Label above an underline-only input; the underline turns navy and doubles on focus, and turns brick on error. The rest-state stroke uses slate to hold 3:1.",
-      "html": "<label class=\"ds-field\"><span>Location</span><input type=\"text\" placeholder=\"City, ZIP or neighborhood\"></label>",
-      "css": ":host{--white:#ffffff;--stone:#f5f3ef;--line:#e4e0d8;--ink:#14202e;--slate:#5a6472;--navy:#0f2a44;--navy-deep:#0a1e31;--on-navy:#f4f1ea;--gold:#b08d3c;--gold-soft:#d6bb7a;--error:#a3341b;--serif:'Bodoni Moda','Didot',Georgia,serif;--sans:'Archivo',system-ui,sans-serif;--ease:cubic-bezier(.16,1,.3,1);}.ds-field{display:grid;gap:.35rem;max-width:22rem;font-family:var(--sans);}.ds-field>span{font-size:.72rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--slate);}.ds-field input{min-height:2.75rem;padding:.45rem 0;border:0;border-bottom:1px solid var(--slate);border-radius:0;background:transparent;color:var(--ink);font:inherit;font-size:1rem;transition:border-color .2s;}.ds-field input::placeholder{color:var(--slate);}.ds-field input:focus{outline:none;border-bottom-color:var(--navy);box-shadow:0 1px 0 var(--navy);}.ds-field input[aria-invalid=true]{border-bottom-color:var(--error);box-shadow:0 1px 0 var(--error);}"
+      "description": "Labels above underline-only fields under a navy top rule; the location field sets its value in serif. Navy and doubled on focus, brick on error.",
+      "html": "<form class=\"ds-finder\"><label class=\"ds-field ds-field--wide\"><span>Location</span><input type=\"text\" placeholder=\"City, ZIP or neighborhood\"></label><label class=\"ds-field\"><span>Min Price</span><input type=\"text\" placeholder=\"No min\"></label><label class=\"ds-field\"><span>Max Price</span><input type=\"text\" placeholder=\"No max\"></label></form>",
+      "css": ":host{--white:#ffffff;--stone:#f5f3ef;--line:#e4e0d8;--ink:#14202e;--slate:#5a6472;--navy:#0f2a44;--navy-deep:#0a1e31;--navy-line:rgba(244,241,234,.18);--on-navy:#f4f1ea;--on-navy-soft:rgba(244,241,234,.78);--gold:#b08d3c;--gold-soft:#d6bb7a;--gold-ink:#85661f;--error:#a3341b;--serif:'Bodoni Moda','Didot',Georgia,serif;--sans:'Archivo',system-ui,sans-serif;--ease:cubic-bezier(.16,1,.3,1);}.ds-finder{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.5rem 2rem;max-width:34rem;padding-top:1rem;border-top:1px solid var(--navy);font-family:var(--sans);}.ds-field{display:grid;gap:.35rem;}.ds-field--wide{grid-column:1/-1;}.ds-field>span{font-size:.72rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--slate);}.ds-field input{width:100%;min-height:2.75rem;padding:.45rem 0;border:0;border-bottom:1px solid #858b95;border-radius:0;background:transparent;color:var(--ink);font:inherit;font-size:1rem;transition:border-color .2s;}.ds-field--wide input{font-family:var(--serif);font-size:clamp(1.25rem,2vw,1.6rem);min-height:3.25rem;}.ds-field input::placeholder{color:#5f6876;}.ds-field input:focus{outline:none;border-bottom-color:var(--navy);box-shadow:0 1px 0 var(--navy);}.ds-field input[aria-invalid=true]{border-bottom-color:var(--error);box-shadow:0 1px 0 var(--error);}"
     },
     {
       "name": "Header Navigation",
@@ -369,73 +401,100 @@
       "refersTo": "nav-link",
       "description": "Spaced-caps slate links; hover and current turn navy with a gold hairline drawn in from the left.",
       "html": "<nav class=\"ds-nav\"><a href=\"#\" aria-current=\"page\">Home</a><a href=\"#\">Listings</a><a href=\"#\">Let&rsquo;s Move</a><a href=\"#\">About Us</a></nav>",
-      "css": ":host{--white:#ffffff;--stone:#f5f3ef;--line:#e4e0d8;--ink:#14202e;--slate:#5a6472;--navy:#0f2a44;--navy-deep:#0a1e31;--on-navy:#f4f1ea;--gold:#b08d3c;--gold-soft:#d6bb7a;--error:#a3341b;--serif:'Bodoni Moda','Didot',Georgia,serif;--sans:'Archivo',system-ui,sans-serif;--ease:cubic-bezier(.16,1,.3,1);}.ds-nav{display:flex;gap:2rem;padding:1rem 1.5rem;background:var(--white);border-bottom:1px solid var(--line);font-family:var(--sans);}.ds-nav a{position:relative;padding-block:.5rem;font-size:.8rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;color:var(--slate);transition:color .2s;}.ds-nav a::after{content:'';position:absolute;left:0;right:0;bottom:0;height:1px;background:var(--gold);transform:scaleX(0);transform-origin:left;transition:transform .35s var(--ease);}.ds-nav a:hover,.ds-nav a[aria-current=page]{color:var(--navy);}.ds-nav a:hover::after,.ds-nav a[aria-current=page]::after{transform:scaleX(1);}.ds-nav a:focus-visible{outline:2px solid var(--navy);outline-offset:3px;}"
+      "css": ":host{--white:#ffffff;--stone:#f5f3ef;--line:#e4e0d8;--ink:#14202e;--slate:#5a6472;--navy:#0f2a44;--navy-deep:#0a1e31;--navy-line:rgba(244,241,234,.18);--on-navy:#f4f1ea;--on-navy-soft:rgba(244,241,234,.78);--gold:#b08d3c;--gold-soft:#d6bb7a;--gold-ink:#85661f;--error:#a3341b;--serif:'Bodoni Moda','Didot',Georgia,serif;--sans:'Archivo',system-ui,sans-serif;--ease:cubic-bezier(.16,1,.3,1);}.ds-nav{display:flex;gap:2rem;padding:1rem 1.5rem;background:var(--white);border-bottom:1px solid var(--line);font-family:var(--sans);}.ds-nav a{position:relative;padding-block:.5rem;font-size:.8rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;color:var(--slate);transition:color .2s;}.ds-nav a::after{content:'';position:absolute;left:0;right:0;bottom:0;height:1px;background:var(--gold);transform:scaleX(0);transform-origin:left;transition:transform .35s var(--ease);}.ds-nav a:hover,.ds-nav a[aria-current=page]{color:var(--navy);}.ds-nav a:hover::after,.ds-nav a[aria-current=page]::after{transform:scaleX(1);}.ds-nav a:focus-visible{outline:2px solid var(--navy);outline-offset:3px;}"
     },
     {
-      "name": "Pitch Card",
+      "name": "Pitch",
       "kind": "card",
       "refersTo": null,
-      "description": "No box: a 1px gold top rule over a serif title and slate body.",
-      "html": "<article class=\"ds-pitch\"><h3>Guide to Buyers</h3><p>Nobody knows the market like we do. Enjoy having a pro at your service.</p></article>",
-      "css": ":host{--white:#ffffff;--stone:#f5f3ef;--line:#e4e0d8;--ink:#14202e;--slate:#5a6472;--navy:#0f2a44;--navy-deep:#0a1e31;--on-navy:#f4f1ea;--gold:#b08d3c;--gold-soft:#d6bb7a;--error:#a3341b;--serif:'Bodoni Moda','Didot',Georgia,serif;--sans:'Archivo',system-ui,sans-serif;--ease:cubic-bezier(.16,1,.3,1);}.ds-pitch{display:grid;gap:.75rem;max-width:22rem;padding-top:1.5rem;border-top:1px solid var(--gold);font-family:var(--sans);}.ds-pitch h3{margin:0;font-family:var(--serif);font-weight:400;font-size:1.5rem;color:var(--navy);}.ds-pitch p{margin:0;line-height:1.65;color:var(--slate);}"
+      "description": "No box: a 1px gold top rule over an italic serif title and slate copy.",
+      "html": "<article class=\"ds-pitch\"><h3>Don't Just List&nbsp;it&hellip;</h3><p><strong>Get it SOLD!</strong> We exhaust every avenue to ensure our listings are at the fingertips of every possible buyer.</p></article>",
+      "css": ":host{--white:#ffffff;--stone:#f5f3ef;--line:#e4e0d8;--ink:#14202e;--slate:#5a6472;--navy:#0f2a44;--navy-deep:#0a1e31;--navy-line:rgba(244,241,234,.18);--on-navy:#f4f1ea;--on-navy-soft:rgba(244,241,234,.78);--gold:#b08d3c;--gold-soft:#d6bb7a;--gold-ink:#85661f;--error:#a3341b;--serif:'Bodoni Moda','Didot',Georgia,serif;--sans:'Archivo',system-ui,sans-serif;--ease:cubic-bezier(.16,1,.3,1);}.ds-pitch{display:grid;gap:.75rem;max-width:22rem;padding-top:1.5rem;border-top:1px solid var(--gold);font-family:var(--sans);line-height:1.65;}.ds-pitch h3{margin:0;font-family:var(--serif);font-style:italic;font-weight:400;font-size:clamp(1.4rem,2vw,1.65rem);line-height:1.15;color:var(--navy);}.ds-pitch p{margin:0;color:var(--slate);}.ds-pitch strong{color:var(--ink);font-weight:600;}"
     },
     {
-      "name": "Service Card on Navy",
-      "kind": "card",
-      "refersTo": null,
-      "description": "On the navy band: soft-gold top rule, white serif title, soft linen body.",
-      "html": "<div class=\"ds-navy\"><article class=\"ds-service\"><h3>Rely on Expertise</h3><p>We make sure you feel confident and educated every step of the way.</p></article></div>",
-      "css": ":host{--white:#ffffff;--stone:#f5f3ef;--line:#e4e0d8;--ink:#14202e;--slate:#5a6472;--navy:#0f2a44;--navy-deep:#0a1e31;--on-navy:#f4f1ea;--gold:#b08d3c;--gold-soft:#d6bb7a;--error:#a3341b;--serif:'Bodoni Moda','Didot',Georgia,serif;--sans:'Archivo',system-ui,sans-serif;--ease:cubic-bezier(.16,1,.3,1);}.ds-navy{padding:2rem;background:var(--navy);}.ds-service{display:grid;gap:1rem;max-width:22rem;padding-top:1.5rem;border-top:1px solid var(--gold-soft);font-family:var(--sans);}.ds-service h3{margin:0;font-family:var(--serif);font-weight:400;font-size:1.85rem;line-height:1.15;color:var(--white);}.ds-service p{margin:0;line-height:1.65;color:rgba(244,241,234,.76);}"
-    },
-    {
-      "name": "Hero Nameplate",
+      "name": "Service Row",
       "kind": "custom",
       "refersTo": null,
-      "description": "Signature: Didone name in white over a scrimmed photo, a soft-gold rule that draws in once, text rising 12px. Static under reduced motion.",
-      "html": "<div class=\"ds-hero\"><h1 class=\"ds-hero__name\">Marci Metzger</h1><p class=\"ds-hero__tenure\">Realtor for nearly 3 decades</p><p class=\"ds-hero__firm\">Pahrump Realtor <span aria-hidden=\"true\">&middot;</span> The Ridge Realty Group</p></div>",
-      "css": ":host{--white:#ffffff;--stone:#f5f3ef;--line:#e4e0d8;--ink:#14202e;--slate:#5a6472;--navy:#0f2a44;--navy-deep:#0a1e31;--on-navy:#f4f1ea;--gold:#b08d3c;--gold-soft:#d6bb7a;--error:#a3341b;--serif:'Bodoni Moda','Didot',Georgia,serif;--sans:'Archivo',system-ui,sans-serif;--ease:cubic-bezier(.16,1,.3,1);}.ds-hero{display:grid;justify-items:start;padding:3rem 2rem 2.5rem;color:var(--white);background:linear-gradient(0deg,rgba(8,20,34,.72),rgba(8,20,34,.25)),linear-gradient(160deg,#4f7fa8,#5d7a4c);}.ds-hero>*{margin:0;animation:ds-rise 1s var(--ease) both;}.ds-hero__name{position:relative;padding-top:1.5rem;font-family:var(--serif);font-weight:400;font-size:clamp(2.5rem,7vw,4.5rem);line-height:.98;letter-spacing:-.015em;}.ds-hero__name::before{content:'';position:absolute;left:0;top:0;width:5.5rem;height:1px;background:var(--gold-soft);transform-origin:left;animation:ds-rule 1.2s .2s var(--ease) both;}.ds-hero__tenure{margin-top:.75rem;font-family:var(--serif);font-size:1.3rem;color:rgba(255,255,255,.92);animation-delay:.1s;}.ds-hero__firm{margin-top:1rem;font-family:var(--sans);font-size:.8rem;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:rgba(255,255,255,.92);animation-delay:.18s;}.ds-hero__firm span{margin-inline:.5em;color:var(--gold-soft);}@keyframes ds-rule{from{transform:scaleX(0);}}@keyframes ds-rise{from{opacity:0;transform:translateY(12px);}}@media (prefers-reduced-motion:reduce){.ds-hero>*,.ds-hero__name::before{animation:none !important;}}"
+      "description": "Ruled row on navy: white serif title with its second line in soft gold italic, soft linen copy to the right.",
+      "html": "<div class=\"ds-navy\"><article class=\"ds-service\"><h3>Rely on <em>Expertise</em></h3><p>We make sure you feel confident and educated every step of the way.</p></article></div>",
+      "css": ":host{--white:#ffffff;--stone:#f5f3ef;--line:#e4e0d8;--ink:#14202e;--slate:#5a6472;--navy:#0f2a44;--navy-deep:#0a1e31;--navy-line:rgba(244,241,234,.18);--on-navy:#f4f1ea;--on-navy-soft:rgba(244,241,234,.78);--gold:#b08d3c;--gold-soft:#d6bb7a;--gold-ink:#85661f;--error:#a3341b;--serif:'Bodoni Moda','Didot',Georgia,serif;--sans:'Archivo',system-ui,sans-serif;--ease:cubic-bezier(.16,1,.3,1);}.ds-navy{padding:2rem;background:var(--navy);}.ds-service{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:1rem 2.5rem;align-items:baseline;padding-block:2rem;border-block:1px solid var(--navy-line);font-family:var(--sans);}.ds-service h3{margin:0;font-family:var(--serif);font-weight:400;font-size:clamp(1.9rem,3.4vw,2.75rem);line-height:1.02;letter-spacing:-.02em;color:var(--white);}.ds-service h3 em{display:block;font-style:italic;color:var(--gold-soft);}.ds-service p{margin:0;line-height:1.65;color:var(--on-navy-soft);}"
+    },
+    {
+      "name": "Editorial Display",
+      "kind": "custom",
+      "refersTo": null,
+      "description": "Upright display headline with one Gold Ink italic word over a sand hairline, and the italic serif sub-head beside it.",
+      "html": "<header class=\"ds-head\"><h2>Get it <em>sold.</em></h2><p>Top Residential Sales Last 5&nbsp;Years</p></header>",
+      "css": ":host{--white:#ffffff;--stone:#f5f3ef;--line:#e4e0d8;--ink:#14202e;--slate:#5a6472;--navy:#0f2a44;--navy-deep:#0a1e31;--navy-line:rgba(244,241,234,.18);--on-navy:#f4f1ea;--on-navy-soft:rgba(244,241,234,.78);--gold:#b08d3c;--gold-soft:#d6bb7a;--gold-ink:#85661f;--error:#a3341b;--serif:'Bodoni Moda','Didot',Georgia,serif;--sans:'Archivo',system-ui,sans-serif;--ease:cubic-bezier(.16,1,.3,1);}.ds-head{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:1rem 2rem;padding-bottom:2rem;border-bottom:1px solid var(--line);}.ds-head h2{margin:0;font-family:var(--serif);font-weight:400;font-size:clamp(3.5rem,10vw,6rem);line-height:.92;letter-spacing:-.03em;color:var(--navy);}.ds-head h2 em{color:var(--gold-ink);}.ds-head p{margin:0;padding-bottom:.35em;font-family:var(--serif);font-style:italic;font-size:clamp(1.15rem,1.8vw,1.4rem);line-height:1.25;color:var(--slate);}"
+    },
+    {
+      "name": "Cover Nameplate",
+      "kind": "custom",
+      "refersTo": null,
+      "description": "Signature: stacked navy name with an italic indented surname, a gold rule that draws in beside the italic tenure, the spaced-caps firm line. Static under reduced motion.",
+      "html": "<div class=\"ds-cover\"><h1><span>Marci</span> <em>Metzger</em></h1><p class=\"ds-cover__tenure\">Realtor for nearly 3 decades</p><p class=\"ds-cover__firm\">Pahrump Realtor <span aria-hidden=\"true\">&middot;</span> The Ridge Realty Group</p></div>",
+      "css": ":host{--white:#ffffff;--stone:#f5f3ef;--line:#e4e0d8;--ink:#14202e;--slate:#5a6472;--navy:#0f2a44;--navy-deep:#0a1e31;--navy-line:rgba(244,241,234,.18);--on-navy:#f4f1ea;--on-navy-soft:rgba(244,241,234,.78);--gold:#b08d3c;--gold-soft:#d6bb7a;--gold-ink:#85661f;--error:#a3341b;--serif:'Bodoni Moda','Didot',Georgia,serif;--sans:'Archivo',system-ui,sans-serif;--ease:cubic-bezier(.16,1,.3,1);}.ds-cover{display:grid;justify-items:start;padding:3rem 2rem;background:var(--white);}.ds-cover>*{margin:0;animation:ds-rise 1s var(--ease) both;}.ds-cover h1{font-family:var(--serif);font-weight:400;font-size:clamp(3rem,7vw,5rem);line-height:.9;letter-spacing:-.035em;color:var(--navy);}.ds-cover h1>*{display:block;}.ds-cover h1 em{font-style:italic;padding-left:.55em;}.ds-cover__tenure{position:relative;margin-top:2rem !important;padding-left:4.5rem;font-family:var(--serif);font-style:italic;font-size:clamp(1.2rem,1.7vw,1.45rem);line-height:1.3;color:var(--ink);animation-delay:.12s !important;}.ds-cover__tenure::before{content:'';position:absolute;left:0;top:.7em;width:3.25rem;height:1px;background:var(--gold);transform-origin:left;animation:ds-rule 1.1s .5s var(--ease) both;}.ds-cover__firm{margin-top:.75rem !important;padding-left:4.5rem;font-family:var(--sans);font-size:.75rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--slate);animation-delay:.2s !important;}.ds-cover__firm span{margin-inline:.45em;color:var(--gold);}@keyframes ds-rule{from{transform:scaleX(0);}}@keyframes ds-rise{from{opacity:0;transform:translateY(14px);}}@media (prefers-reduced-motion:reduce){.ds-cover>*,.ds-cover__tenure::before{animation:none !important;}}"
+    },
+    {
+      "name": "Photo Caption",
+      "kind": "custom",
+      "refersTo": null,
+      "description": "Gallery tile: photo on a stone placeholder that zooms on hover, with a navy caps place name and an italic serif description.",
+      "html": "<figure class=\"ds-tile\"><button type=\"button\"><span class=\"ds-tile__img\"></span></button><p><span class=\"ds-tile__cap\">Ailanto</span> <span class=\"ds-tile__desc\">Pool, patio and mountain views</span></p></figure>",
+      "css": ":host{--white:#ffffff;--stone:#f5f3ef;--line:#e4e0d8;--ink:#14202e;--slate:#5a6472;--navy:#0f2a44;--navy-deep:#0a1e31;--navy-line:rgba(244,241,234,.18);--on-navy:#f4f1ea;--on-navy-soft:rgba(244,241,234,.78);--gold:#b08d3c;--gold-soft:#d6bb7a;--gold-ink:#85661f;--error:#a3341b;--serif:'Bodoni Moda','Didot',Georgia,serif;--sans:'Archivo',system-ui,sans-serif;--ease:cubic-bezier(.16,1,.3,1);}.ds-tile{margin:0;max-width:22rem;}.ds-tile button{display:block;width:100%;padding:0;border:0;background:var(--stone);cursor:zoom-in;overflow:hidden;}.ds-tile__img{display:block;aspect-ratio:4/5;background:linear-gradient(160deg,#9fb7cc,#c9b38a 70%,#7d8f6a);transition:transform 1s var(--ease);}.ds-tile button:hover .ds-tile__img,.ds-tile button:focus-visible .ds-tile__img{transform:scale(1.04);}.ds-tile button:focus-visible{outline:2px solid var(--navy);outline-offset:3px;}.ds-tile p{display:flex;flex-wrap:wrap;align-items:baseline;gap:.15rem .7rem;margin:.75rem 0 0;}.ds-tile__cap{font-family:var(--sans);font-size:.7rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--navy);}.ds-tile__desc{font-family:var(--serif);font-style:italic;font-size:1rem;color:var(--slate);}"
     }
   ],
   "narrative": {
-    "northStar": "The Brokerage Nameplate",
-    "overview": "The category standard played straight, at luxury-brokerage craft. The page is light and calm: a white ground, a warm stone tint for working sections, and the Pahrump Valley's own photography carrying the mood. The brand is The Ridge Realty Group's navy and gold, taken from the brokerage logo, and Marci's name is set in a Didone the way a brokerage sets a nameplate.\n\nRestraint does the work. Square corners, 1px hairlines, underline-style form fields and generous section spacing replace ornament. Gold appears only as thin rules and small marks, never as a fill or as text on white. Navy is used for brand bands (services, footer) and primary buttons, so the page stays light overall. Motion is limited to one entrance on load.\n\nThe user rejected themed or costume worlds and heavy dark grounds as not elegant. This system is the replacement: clean, elegant and photo-led.",
+    "northStar": "The Brokerage Edition",
+    "overview": "The homepage reads like an issue of a property magazine published under The Ridge Realty Group's masthead. It opens on a split cover: Marci's name stacked large in navy on white, with the valley photograph bleeding off the right edge. After that it runs as a sequence of spreads: an oversized headline over a hairline, a portrait on an offset plate beside a large serif lede, a staggered photo spread with captions, a centered pull quote, ruled service rows on navy, and a giant serif phone number to close. The grounds stay white and warm stone, the brand stays navy and gold, and the polish stays at luxury-brokerage level.\n\nThe editorial voice comes from type and composition, not ornament. Bodoni Moda carries every name, heading, lede and caption at weight 400. Its italic is held back for the words that carry meaning, and section headings stay upright. Square corners, 1px hairlines, underline fields, drop-cap prose and asymmetric 12-column placement replace cards, boxes and badges. Gold stays a hairline on light grounds. A deeper gold ink exists only for large italic display words.\n\nThe user picked this direction on 2026-11-06 over the earlier category-standard brokerage page, which felt \"a bit more common and simple\". The standing preference still applies: clean and elegant, no themed or costume worlds, no heavy dark page grounds.",
     "keyCharacteristics": [
-      "White and warm-stone grounds; navy reserved for brand bands and primary actions.",
-      "Gold as hairline only: rules, link underlines, the hero rule, nav underlines.",
-      "Bodoni Moda at weight 400 for every display and heading role; Archivo at normal width for all text and labels.",
-      "Square corners everywhere; 1px hairlines; underline-only form fields.",
-      "One full-bleed photograph (the hero); every other image sits inside the container.",
-      "One authored motion: the gold rule draws in and the hero text rises once."
+      "A split cover: a stacked serif name on white (6fr) beside a photograph that bleeds to the right edge (7fr), with an italic caption underneath.",
+      "Spreads on a 12-column grid, with offset placement, staggered photos and generous white space.",
+      "Bodoni Moda at 400 for display, ledes, captions and the phone number, with italic as an accent. Archivo at normal width for text and labels.",
+      "Section headings upright. Italic marks the emphasized word, the serif sub-line and the caption.",
+      "Gold as 1px rules and underlines. Gold Ink for large italic display words on white. Soft Gold for italic accents on navy.",
+      "Square corners, no cards, no eyebrows, no section numbers.",
+      "One authored entrance: the cover photo unveils, the gold rule draws in, and the text rises."
     ],
     "rules": [
       {
         "name": "The Hairline Gold Rule",
-        "body": "Gold is for hairlines, rules and small marks only. Never set text in gold on white, and never use gold as a fill.",
+        "body": "Ridge Gold is for 1px rules, underlines and small marks only. It is never set as text on white and never used as a fill. When gold has to be read as letters on a light ground, use Gold Ink, and only at display size in italic.",
         "section": "colors"
       },
       {
         "name": "The Logo Palette Rule",
-        "body": "The brand hues are the navy and gold from The Ridge Realty Group's logo. Do not add a third brand hue. The only extra color is a small functional green chip for the \"open now\" office status.",
+        "body": "The brand hues are the navy and gold from The Ridge Realty Group's logo. Do not add a third brand hue. The only extra color is the small functional green chip for the \"open now\" office status.",
         "section": "colors"
       },
       {
         "name": "The Light Ground Rule",
-        "body": "The page is white and stone. Navy fills bounded brand bands (services, footer) and buttons. It is never the overall page ground.",
+        "body": "The page is white and stone. Navy fills bounded bands (services, footer) and buttons. It is never the overall page ground.",
         "section": "colors"
       },
       {
+        "name": "The Meaningful Italic Rule",
+        "body": "Italic marks meaning, never decoration on every heading. It sets the emphasized word in a display line (\"Metzger\", \"sold.\", \"28.5 million\", \"community.\"), the second line of a service title, and the serif secondary voice (sub-heads, tenure, captions, pitch titles). Routine section headings (Find Your Dream Home, Photo Gallery, Our Services, Call or Visit, Send Message) stay upright. One italic accent per display line at most.",
+        "section": "typography"
+      },
+      {
         "name": "The Didone Voice Rule",
-        "body": "Bodoni Moda is for names, headings, the lede and serif sub-lines, always at weight 400. It never sets labels, buttons or small text. Archivo stays at normal width; do not use its width axis.",
+        "body": "Bodoni Moda sets names, headings, ledes, quotes, captions, the location field and the giant phone number, always at weight 400. It never sets labels or buttons. Archivo stays at normal width; do not use its width axis.",
         "section": "typography"
       },
       {
         "name": "The No Kicker Rule",
-        "body": "No eyebrow or kicker label sits above a heading. Spaced capitals belong to buttons, nav, form labels, captions and the hero firm line, which sits below the name.",
+        "body": "No eyebrow, kicker label or section number sits above a heading. Spaced capitals belong to buttons, nav, form labels, fact terms, the cover firm line (below the name) and gallery place names (below the photo).",
         "section": "typography"
       },
       {
-        "name": "The One Full-Bleed Rule",
-        "body": "The hero is the only full-bleed photograph. Gallery sources are only 1024px wide, so every other image stays inside the container at 1024px or smaller.",
+        "name": "The Asymmetric Spread Rule",
+        "body": "Compose on the 12-column grid with offsets and unequal spans, not centered stacks or equal card grids. Symmetry is kept for the pull quote alone.",
+        "section": "layout"
+      },
+      {
+        "name": "The One Bleed Rule",
+        "body": "The cover photograph is the only image that bleeds to the viewport edge. Gallery sources are only 1024px wide, so every other image stays inside the container and is never shown above about 1024px.",
         "section": "layout"
       },
       {
@@ -445,7 +504,7 @@
       },
       {
         "name": "The Flat-By-Default Rule",
-        "body": "Surfaces are flat. A shadow appears only beneath a surface that floats over other content, and it is always soft and navy-tinted. No hard or offset shadows.",
+        "body": "Surfaces are flat. A shadow appears only beneath a surface that floats over other content, and it is always soft and navy-tinted. No hard or offset shadows. The offset plate is a flat tint, not a shadow.",
         "section": "elevation"
       },
       {
@@ -454,31 +513,38 @@
         "section": "shapes"
       },
       {
+        "name": "The No Card Rule",
+        "body": "Content groups are separated by rules and space, never boxed. The message panel's stone fill is the only container.",
+        "section": "shapes"
+      },
+      {
         "name": "The Focus Ground Rule",
-        "body": "The focus ring is a 2px solid navy outline at 3px offset on light grounds, and soft gold on navy bands and on the hero.",
+        "body": "The focus ring is a 2px solid navy outline at 3px offset on light grounds, and soft gold on navy bands.",
         "section": "components"
       },
       {
         "name": "The Single Entrance Rule",
-        "body": "There is one authored motion. On load, the hero gold rule draws in from the left (scaleX, 1.2s after a 0.2s delay), and the name, tenure, firm line and actions rise 12px and fade in, staggered 0, 0.1, 0.18 and 0.28s over 1s. Everything else is state feedback: hovers, the nav underline, the tile zoom, the menu panel and the lightbox fade. All motion uses cubic-bezier(.16, 1, .3, 1). Under prefers-reduced-motion, all animation and transitions are removed and scrolling is instant.",
+        "body": "There is one authored motion, on the cover. The photo unveils with a clip-path wipe from the right edge (1.5s). The gold tenure rule draws in from the left (scaleX, 1.1s after a 0.5s delay). The name, tenure, firm line and actions rise 14px and fade in, staggered 0, 0.12, 0.2 and 0.3s over 1s. Everything else is state feedback: hovers, the nav underline, the arrow nudge, the tile zoom, the menu panel and the lightbox fade. All motion uses cubic-bezier(.16, 1, .3, 1). Under prefers-reduced-motion, all animation and transitions are removed and scrolling is instant.",
         "section": "components"
       }
     ],
     "dos": [
-      "Do keep grounds white and warm stone, with navy only on bounded brand bands and buttons.",
-      "Do use gold only as 1px rules, underlines and small marks: Ridge Gold on light grounds, Soft Gold on navy and on photos.",
-      "Do set names and headings in Bodoni Moda at 400, and everything else in Archivo at normal width.",
+      "Do keep grounds white and warm stone, with navy only on bounded bands and buttons.",
+      "Do use Ridge Gold only as 1px rules, underlines and small marks, Gold Ink only for large italic display words on white, and Soft Gold for accents on navy.",
+      "Do keep section headings upright and spend italic on the one word or line that carries meaning, plus the serif sub-lines and captions.",
+      "Do compose spreads on the 12-column grid with offsets, unequal spans and hairlines between parts.",
+      "Do set names, headings, ledes and captions in Bodoni Moda at 400, and everything else in Archivo at normal width.",
       "Do keep every corner square and every line 1px.",
-      "Do use underline-only fields with labels above, turning navy on focus and Brick on error.",
-      "Do use a navy focus ring on light grounds and soft gold on navy and on the hero.",
-      "Do state proof in sentences, using the reference figures as given.",
-      "Do keep a field's rest-state underline at 3:1 or better against its ground."
+      "Do use underline-only fields with labels above, turning navy on focus and Brick on error, with the rest-state underline at 3:1 or better against its ground.",
+      "Do use a navy focus ring on light grounds and soft gold on navy.",
+      "Do state proof in sentences, using the reference figures as given."
     ],
     "donts": [
-      "Don't set gold text on white, or use gold as a fill.",
-      "Don't put eyebrow or kicker labels above headings.",
-      "Don't build stats or metric rows.",
-      "Don't run any photo full-bleed except the hero, and don't upscale gallery sources past 1024px.",
+      "Don't set Ridge Gold text on white, set Gold Ink below display size, or use gold as a fill.",
+      "Don't italicize every heading, or put more than one italic accent in a display line.",
+      "Don't put eyebrow labels, kickers or section numbers above headings.",
+      "Don't box content into cards, or build stats or metric rows.",
+      "Don't bleed any photo to the viewport edge except the cover, and don't show gallery sources above about 1024px.",
       "Don't add rounded corners, boxed form fields (except the composed-message textarea), hard or offset shadows, or framed photos.",
       "Don't add a second authored animation or scroll-triggered reveals, and don't leave anything moving under reduced motion.",
       "Don't reintroduce themed or costume materials or dark full-page grounds."

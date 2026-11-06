@@ -46,7 +46,7 @@
   --s6: 2rem; --s7: 3rem; --s8: 4.5rem;
   --header-h: 5rem;
   --gutter: clamp(1.25rem, 5vw, 4rem);
-  --measure: 76rem;
+  --measure: 88rem;
   --ease: cubic-bezier(.16, 1, .3, 1);
 }
 
@@ -179,7 +179,8 @@ svg { fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round
 /* ---------- Cover ---------- */
 .hero {
   display: grid;
-  grid-template-columns: minmax(0, 6fr) minmax(0, 7fr);
+  --edge: max(var(--gutter), (100vw - var(--measure)) / 2); /* left edge of the page frame */
+  grid-template-columns: min(calc(var(--edge) + 36rem), 50%) minmax(0, 1fr);
   min-height: calc(100svh - var(--header-h));
   max-height: 64rem;
 }
@@ -188,7 +189,7 @@ svg { fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round
   align-content: center;
   justify-items: start;
   padding-block: clamp(3rem, 8vh, 6rem);
-  padding-inline-start: max(var(--gutter), (100vw - var(--measure)) / 2);
+  padding-inline-start: var(--edge);
   padding-inline-end: clamp(2rem, 4vw, 4rem);
 }
 .hero__name {
@@ -244,7 +245,7 @@ svg { fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round
   animation: unveil 1.5s var(--ease) both;
 }
 .hero__photo figcaption {
-  padding: var(--s3) max(var(--gutter), (100vw - var(--measure)) / 2) var(--s4) var(--s4);
+  padding: var(--s3) var(--edge) var(--s4) var(--s4);
   font-family: var(--serif);
   font-style: italic;
   font-size: .9rem;
@@ -345,7 +346,6 @@ section:not(.hero) { padding-block: clamp(4.5rem, 10vw, 8.5rem); }
 /* ---------- Search ---------- */
 .search__grid { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: clamp(2.5rem, 6vw, 6rem); align-items: start; }
 .search__head { display: grid; gap: var(--s5); position: sticky; top: calc(var(--header-h) + 2rem); }
-.search__head .display em, .gallery__head .display em, .contact .display em, .message h3 em { color: var(--gold-ink); }
 .search__head p, .gallery__head p { color: var(--slate); max-width: 36ch; }
 .finder {
   display: grid;
