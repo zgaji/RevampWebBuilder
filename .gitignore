@@ -1,0 +1,16 @@
+# Local editor / AI tool installs and settings
+.claude/
+.cursor/
+
+# Upload copy of the site (regenerated from index.html, css/, js/, assets/)
+deploy/
+
+# Impeccable working files (screenshots, caches, machine-local config)
+.impeccable/review/
+.impeccable/questions/
+.impeccable/hook.cache.json
+.impeccable/config.local.json
+
+# OS clutter
+Thumbs.db
+.DS_Store
