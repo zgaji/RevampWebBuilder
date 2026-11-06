@@ -1,295 +1,298 @@
 ---
 name: Marci Metzger Homes
-description: Ranch Gate & Brand. A Pahrump ranch gate in weathered corten steel, sky through the cut lettering, one lit amber signal.
+description: Clean, light, photo-led brokerage polish in The Ridge Realty Group's navy and gold, with a Didone nameplate.
 colors:
-  amber: "#f2a43a"
-  amber-hi: "#ffbb57"
-  steel: "#5a2a17"
-  steel-deep: "#3a1d10"
-  rust: "#8a4422"
-  rust-hi: "#b0603a"
-  iron: "#1c1612"
-  iron-2: "#261b15"
-  bone: "#ecdfc6"
-  bone-lit: "#fff3dc"
-  bone-ink: "#e9dcc4"
-  bone-dim: "#cdb999"
-  sage: "#aab595"
-  ink: "#1c1612"
-  ink-soft: "#4a3a2e"
-  error-rust: "#9a3b12"
-  sky: "#1d6fd6"
+  ridge-navy: "#0f2a44"
+  navy-deep: "#0a1e31"
+  ridge-gold: "#b08d3c"
+  gold-soft: "#d6bb7a"
+  white: "#ffffff"
+  stone: "#f5f3ef"
+  line: "#e4e0d8"
+  ink: "#14202e"
+  slate: "#5a6472"
+  on-navy: "#f4f1ea"
+  on-navy-soft: "rgba(244, 241, 234, .76)"
+  navy-line: "rgba(255, 255, 255, .16)"
+  error: "#a3341b"
 typography:
   display:
-    fontFamily: "Archivo, system-ui, sans-serif"
-    fontSize: "clamp(3rem, 11.2vw, 11rem)"
-    fontWeight: 900
-    lineHeight: 0.86
-    letterSpacing: "0.01em"
-    fontVariation: "'wdth' 125"
+    fontFamily: "Bodoni Moda, Didot, Georgia, serif"
+    fontSize: "clamp(3rem, 8vw, 6rem)"
+    fontWeight: 400
+    lineHeight: 0.98
+    letterSpacing: "-0.015em"
   headline:
-    fontFamily: "Archivo, system-ui, sans-serif"
-    fontSize: "clamp(2.1rem, 5vw, 4rem)"
-    fontWeight: 850
+    fontFamily: "Bodoni Moda, Didot, Georgia, serif"
+    fontSize: "clamp(2.25rem, 4.6vw, 3.75rem)"
+    fontWeight: 400
     lineHeight: 1.05
     letterSpacing: "-0.01em"
-    fontVariation: "'wdth' 125"
-  title:
-    fontFamily: "Archivo, system-ui, sans-serif"
-    fontSize: "clamp(1.4rem, 2.6vw, 2rem)"
-    fontWeight: 800
-    lineHeight: 1.05
-    letterSpacing: "-0.005em"
-    fontVariation: "'wdth' 112"
-  numeral:
-    fontFamily: "Archivo, system-ui, sans-serif"
-    fontSize: "clamp(2rem, 3.6vw, 3rem)"
-    fontWeight: 850
-    lineHeight: 1
-    letterSpacing: "-0.02em"
-    fontFeature: "'tnum' 1"
-    fontVariation: "'wdth' 125"
   lede:
-    fontFamily: "Archivo, system-ui, sans-serif"
-    fontSize: "clamp(1.2rem, 1.8vw, 1.45rem)"
-    fontWeight: 500
-    lineHeight: 1.4
+    fontFamily: "Bodoni Moda, Didot, Georgia, serif"
+    fontSize: "clamp(1.45rem, 2.4vw, 1.9rem)"
+    fontWeight: 400
+    lineHeight: 1.3
+  title:
+    fontFamily: "Bodoni Moda, Didot, Georgia, serif"
+    fontSize: "clamp(1.5rem, 2.2vw, 1.85rem)"
+    fontWeight: 400
+    lineHeight: 1.15
+  subtitle:
+    fontFamily: "Bodoni Moda, Didot, Georgia, serif"
+    fontSize: "1.15rem"
+    fontWeight: 400
+    lineHeight: 1.25
   body:
     fontFamily: "Archivo, system-ui, sans-serif"
     fontSize: "1.0625rem"
     fontWeight: 400
-    lineHeight: 1.6
-  button:
-    fontFamily: "Archivo, system-ui, sans-serif"
-    fontSize: "0.9rem"
-    fontWeight: 750
-    letterSpacing: "0.06em"
-    fontVariation: "'wdth' 125"
+    lineHeight: 1.65
   label:
     fontFamily: "Archivo, system-ui, sans-serif"
-    fontSize: "0.75rem"
-    fontWeight: 700
-    letterSpacing: "0.12em"
-    fontVariation: "'wdth' 125"
+    fontSize: "0.8rem"
+    fontWeight: 600
+    letterSpacing: "0.14em"
+  label-sm:
+    fontFamily: "Archivo, system-ui, sans-serif"
+    fontSize: "0.72rem"
+    fontWeight: 600
+    letterSpacing: "0.16em"
 rounded:
-  hairline: "2px"
+  none: "0"
 spacing:
+  s1: "0.25rem"
   s2: "0.5rem"
   s3: "0.75rem"
   s4: "1rem"
   s5: "1.5rem"
   s6: "2rem"
   s7: "3rem"
+  s8: "4.5rem"
+  section: "clamp(4.5rem, 10vw, 8rem)"
 components:
-  button-call:
-    backgroundColor: "{colors.amber}"
+  button-navy:
+    backgroundColor: "{colors.ridge-navy}"
+    textColor: "{colors.white}"
+    typography: "{typography.label}"
+    rounded: "{rounded.none}"
+    padding: "0.8rem 1.6rem"
+    height: "3.25rem"
+  button-navy-hover:
+    backgroundColor: "{colors.navy-deep}"
+  button-white:
+    backgroundColor: "{colors.white}"
+    textColor: "{colors.ridge-navy}"
+    typography: "{typography.label}"
+    rounded: "{rounded.none}"
+    padding: "0.8rem 1.6rem"
+    height: "3.25rem"
+  button-white-hover:
+    backgroundColor: "{colors.stone}"
+  button-ghost:
+    backgroundColor: "transparent"
+    textColor: "{colors.white}"
+    typography: "{typography.label}"
+    rounded: "{rounded.none}"
+    padding: "0.8rem 1.6rem"
+    height: "3.25rem"
+  button-outline:
+    backgroundColor: "transparent"
+    textColor: "{colors.ridge-navy}"
+    typography: "{typography.label}"
+    rounded: "{rounded.none}"
+    padding: "0.55rem 1.1rem"
+    height: "2.6rem"
+  button-outline-hover:
+    backgroundColor: "{colors.ridge-navy}"
+    textColor: "{colors.white}"
+  input-underline:
+    backgroundColor: "transparent"
     textColor: "{colors.ink}"
-    typography: "{typography.button}"
-    rounded: "{rounded.hairline}"
-    padding: "0.75rem 1.5rem"
-    height: "3rem"
-  button-call-hover:
-    backgroundColor: "{colors.amber-hi}"
-  button-bone:
-    backgroundColor: "{colors.bone}"
-    textColor: "{colors.ink}"
-    typography: "{typography.button}"
-    rounded: "{rounded.hairline}"
-    padding: "0.75rem 1.5rem"
-    height: "3rem"
-  button-bone-hover:
-    backgroundColor: "{colors.bone-lit}"
-  button-iron:
-    backgroundColor: "{colors.iron}"
-    textColor: "{colors.bone}"
-    typography: "{typography.button}"
-    rounded: "{rounded.hairline}"
-    padding: "0.75rem 1.5rem"
-    height: "3rem"
-  button-iron-hover:
-    backgroundColor: "{colors.steel-deep}"
-  plate-bone:
-    backgroundColor: "{colors.bone}"
-    textColor: "{colors.ink}"
-    padding: "2rem 2rem 1.5rem"
-  plate-steel:
-    backgroundColor: "{colors.steel-deep}"
-    textColor: "{colors.bone}"
-    padding: "clamp(1.5rem, 3vw, 2.5rem)"
-  field-instrument:
-    backgroundColor: "{colors.iron}"
-    textColor: "{colors.bone}"
-    padding: "0.75rem 1rem"
-  field-message:
-    backgroundColor: "{colors.bone-lit}"
-    textColor: "{colors.ink}"
-    rounded: "{rounded.hairline}"
-    padding: "0.7rem 0.8rem"
+    typography: "{typography.body}"
+    rounded: "{rounded.none}"
+    padding: "0.45rem 0"
+    height: "2.75rem"
   nav-link:
-    textColor: "{colors.bone-dim}"
+    textColor: "{colors.slate}"
     typography: "{typography.label}"
+    padding: "0.5rem 0"
   nav-link-active:
-    textColor: "{colors.bone}"
-  tile-tag:
-    backgroundColor: "{colors.bone}"
-    textColor: "{colors.ink}"
-    typography: "{typography.label}"
-    padding: "0.35rem 0.7rem 0.35rem 0.75rem"
+    textColor: "{colors.ridge-navy}"
+  finder-card:
+    backgroundColor: "{colors.white}"
+    rounded: "{rounded.none}"
+    padding: "clamp(1.75rem, 4vw, 3rem)"
+  message-panel:
+    backgroundColor: "{colors.stone}"
+    rounded: "{rounded.none}"
+    padding: "clamp(1.75rem, 4vw, 2.75rem)"
 ---
 
 # Design System: Marci Metzger Homes
 
 ## Overview
 
-**Creative North Star: "Ranch Gate & Brand"**
+**Creative North Star: "The Brokerage Nameplate"**
 
-The page is the entrance gate a Pahrump ranch gives its land. The ground is one material, oxidized corten steel, and everything else is defined by what is cut out of it or bolted onto it: the name is cut through the beam so the Spring Mountains show through the letters, the arch below opens onto the same view, and reading surfaces are plates riveted at four corners or hung from two chains. Sections are sheets of the same steel joined at seams. Quieter reading sections use the same sheet heat-darkened to blackened steel.
+The category standard played straight, at luxury-brokerage craft. The page is light and calm: a white ground, a warm stone tint for working sections, and the Pahrump Valley's own photography carrying the mood. The brand is The Ridge Realty Group's navy and gold, taken from the brokerage logo, and Marci's name is set in a Didone the way a brokerage sets a nameplate.
 
-Density is calm and plate-by-plate: generous section padding, a single centered column (78rem max), and asymmetric two-column grids with a sticky lead column on desktop. Type is one family, Archivo, used wide (125% width) and heavy for everything cut or stamped, and at normal width for reading text. Color is earth and metal throughout, with exactly one lit signal: desert-sun amber on the call action.
+Restraint does the work. Square corners, 1px hairlines, underline-style form fields and generous section spacing replace ornament. Gold appears only as thin rules and small marks, never as a fill or as text on white. Navy is used for brand bands (services, footer) and primary buttons, so the page stays light overall. Motion is limited to one entrance on load.
 
-The world rejects the realtor default the build was written against: a house photo hero, a white serif name, and a floating search bar.
+The user rejected themed or costume worlds and heavy dark grounds as not elegant. This system is the replacement: clean, elegant and photo-led.
 
 **Key Characteristics:**
-- One material (corten) in three tempers: lit steel, blackened iron, and the deep plate.
-- The name is cut through steel, showing the photograph, never painted on top of it.
-- Bone plates with rivet corners carry anything that must be read closely.
-- One amber signal, reserved for calling.
-- Square edges (2px at most); depth comes from bevels, seams, and cast shadows, not from rounding.
-- Motion is physical and plays once: sun sweeps through the cut letters, the sign settles on its chains.
+- White and warm-stone grounds; navy reserved for brand bands and primary actions.
+- Gold as hairline only: rules, link underlines, the hero rule, nav underlines.
+- Bodoni Moda at weight 400 for every display and heading role; Archivo at normal width for all text and labels.
+- Square corners everywhere; 1px hairlines; underline-only form fields.
+- One full-bleed photograph (the hero); every other image sits inside the container.
+- One authored motion: the gold rule draws in and the hero text rises once.
 
 ## Colors
 
-A rust-and-iron ground with bone reading surfaces, sage for secondary labels, and a single desert-sun amber.
+A light, two-brand-color palette: the brokerage's navy and gold on white and warm stone, with near-black navy ink.
 
 ### Primary
-- **Desert-Sun Amber** (amber): the call action. Fills every call button (rail, hanging sign, services, composed message), colors the tel links in the portrait caption and the large contact phone number. It also marks keyboard focus (2px outline, 3px offset), text selection, caret, form accent, and the focused instrument field's underline. Those are interaction states, not decoration.
-- **Lit Amber** (amber-hi): hover state of the call fill and the contact phone.
+- **Ridge Navy** (ridge-navy): the brand color from The Ridge logo. Fills primary buttons, the services band, the skip link and text selection, and sets display headings on light grounds. It is also the focus ring color on light grounds.
+- **Night Navy** (navy-deep): the hover state of navy buttons, and the footer ground.
 
 ### Secondary
-- **Corten Steel** (steel): base of the lit sheets (the gate beam, "Get it sold", services, footer), always under the corten photo texture with a translucent brown wash.
-- **Deep Plate Rust** (steel-deep): base of dark riveted plates (portrait, gauges, search panel), the gallery tile ground, and the iron button's hover.
-- **Rust** (rust): structural lines: footer top edge (3px), mobile nav bottom edge, scrollbar thumb.
-- **Lit Rust** (rust-hi): the accent line: gauge top rule (3px), active nav underline, the "sold" underline, link underlines in contact facts, rail bottom hairline (at 35%).
-
-### Tertiary
-- **Sage** (sage): secondary labels only: field labels, the panel title, contact fact terms, gauge notes, the "open now" state. Measured about 6.8:1 on steel.
+- **Ridge Gold** (ridge-gold): the logo's gold. Used for 1px rules (pitch tops), the nav hover and active underline, social link underlines, and the link underline color in facts. Never used as text on white, because it reaches only about 3:1 there.
+- **Soft Gold** (gold-soft): gold for navy and photographic grounds. Used for the hero rule, the service-card top rules on navy, the hero separator dot, and the focus ring on navy and on the hero.
 
 ### Neutral
-- **Blackened Iron** (iron): page ground, rail (at 92% with blur), lightbox image ground, iron button.
-- **Iron Sheet** (iron-2): base of the blackened-steel sections under a dense dark wash.
-- **Bone** (bone): headings on steel and iron, bone plates, bone button, tile tags, lightbox controls.
-- **Lit Bone** (bone-lit): hover of bone controls; the message inputs sit on it at 70%.
-- **Bone Ink** (bone-ink): default body text color on dark ground.
-- **Dim Bone** (bone-dim): supporting paragraphs, captions, inactive nav, panel notes, footer text.
-- **Ink** (ink): text on bone and amber.
-- **Soft Ink** (ink-soft): secondary text on bone (tenure line, message labels and notes).
-- **Error Rust** (error-rust): the required marker and the invalid field border on the bone message plate.
-- **Sky** (sky): fallback fill for the cut name only, visible if `background-clip: text` fails.
+- **White** (white): the page ground, the search card, and the header (at 96% opacity).
+- **Warm Stone** (stone): the section tint (search), the message panel, image placeholders, and the white button's hover.
+- **Hairline Sand** (line): 1px dividers such as the header border, lede underline, badge rule, facts rule and mobile nav rows.
+- **Navy Ink** (ink): body text and the lede.
+- **Slate** (slate): secondary text, nav links at rest, field labels, captions and notes.
+- **Linen on Navy** (on-navy) and **Soft Linen** (on-navy-soft): body text and secondary text on navy bands.
+- **Navy Hairline** (navy-line): dividers on navy.
+- **Brick** (error): validation messages, the required-field marker, and the invalid-field underline.
 
 ### Named Rules
-**The One Lit Signal Rule.** Amber fills only call actions (tel links and call buttons) and the interaction states focus, selection, and caret. Search submits on bone; message send is iron. If something amber can't be pressed to reach Marci by phone, it is wrong.
+**The Hairline Gold Rule.** Gold is for hairlines, rules and small marks only. Never set text in gold on white, and never use gold as a fill.
 
-**The Blackened Steel Rule.** Blackened steel is not a second material. It is the same corten sheet and the same texture under a heavier dark wash (86% versus 42%), used for the quieter reading sections (search, gallery, contact). Alternate lit steel and blackened steel down the page; don't introduce a flat dark panel.
+**The Logo Palette Rule.** The brand hues are the navy and gold from The Ridge Realty Group's logo. Do not add a third brand hue. The only extra color is a small functional green chip for the "open now" office status.
+
+**The Light Ground Rule.** The page is white and stone. Navy fills bounded brand bands (services, footer) and buttons. It is never the overall page ground.
 
 ## Typography
 
-**Display Font:** Archivo variable, self-hosted (weights 100–900, width 62–125%), with system-ui fallback
-**Body Font:** Archivo at normal width
+**Display Font:** Bodoni Moda (with Didot, Georgia, serif), self-hosted variable woff2.
+**Body Font:** Archivo (with system-ui, sans-serif), self-hosted variable woff2, used at normal width.
 
-**Character:** One grotesk in two tempers. Wide and heavy for stamped and cut things (the name, section heads, buttons, labels, numerals), and normal width for reading text, so the cut letters and the plain-spoken copy come from the same steel.
+**Character:** a high-contrast Didone that echoes the Didone lettering of Marci's logo, paired with a plain, sturdy grotesque. The serif carries names and headings at weight 400; the sans does all the work.
 
 ### Hierarchy
-- **Display** (900, 125% width, clamp(3rem, 11.2vw, 11rem); 12.8vw under 600px, line-height 0.86, uppercase): the cut name in the gate beam only.
-- **Headline** (850, 125% width, clamp(2.1rem, 5vw, 4rem), 1.05, uppercase): section heads in bone. The lead section ("Get it sold") runs larger, at clamp(3rem, 9vw, 6rem) with line-height 0.9.
-- **Title** (800, 112% width, clamp(1.4rem, 2.6vw, 2rem)): ledger entries and record heads. Smaller h3s run at 1.3rem, weight 780. The sign's firm line is 800, 112% width, 1.4rem, uppercase.
-- **Numeral** (850, 125% width, clamp(2rem, 3.6vw, 3rem), tabular): gauge values, with units set at 0.5em in dim bone. Phone numbers are always tabular.
-- **Lede** (500, clamp(1.2rem, 1.8vw, 1.45rem), 1.4): the one sentence that states the record.
-- **Body** (400, 1.0625rem, 1rem under 600px, 1.6): reading text, held to 52–62ch.
-- **Button** (750, 125% width, 0.9rem, 0.06em, uppercase).
-- **Label** (700, 125% width, 0.72–0.82rem, 0.1–0.16em, uppercase): field labels, fact terms, panel titles, tags, nav (650 weight, 0.8rem).
+- **Display** (400, clamp(3rem, 8vw, 6rem), 0.98, -0.015em): Marci's name in the hero only, white on the photo.
+- **Headline** (400, clamp(2.25rem, 4.6vw, 3.75rem), 1.05, -0.01em): section headings, navy on light and white on navy.
+- **Lede** (400, clamp(1.45rem, 2.4vw, 1.9rem), 1.3, max 30ch): the proof sentence, with its figure in weight 600 navy.
+- **Title** (400, clamp(1.5rem, 2.2vw, 1.85rem), 1.15): card headings in pitches, services and the message panel (fixed at 1.5–1.75rem in light sections).
+- **Subtitle** (400, 1.15rem, 1.25): serif sub-lines such as the sales subtitle, the portrait name and the hero tenure line (scaled to clamp(1.15rem, 1.8vw, 1.45rem) there).
+- **Body** (Archivo 400, 1.0625rem, 1.65; 1rem under 600px): running text, kept to 42–62ch.
+- **Label** (Archivo 600, 0.8rem, 0.14em, uppercase): buttons, nav links (at weight 500), social links, and the hero firm line (500, 0.22em).
+- **Label Small** (Archivo 600, 0.72rem, 0.16em, uppercase): field labels, fact terms and gallery captions (at weight 500).
+
+Phone numbers use tabular figures in the header and portrait, and lining figures in the large serif contact number.
 
 ### Named Rules
-**The Cut Name Exception.** The cut name is the only type allowed past the 6rem display cap: it runs at about 11.2vw on desktop (to 11rem) and 12.8vw on phones, because the gate exists to carry a large cut name. Every other heading stays at or under 6rem.
+**The Didone Voice Rule.** Bodoni Moda is for names, headings, the lede and serif sub-lines, always at weight 400. It never sets labels, buttons or small text. Archivo stays at normal width; do not use its width axis.
 
-**The Wide-For-Stamped Rule.** 125% width belongs to things stamped or cut: display, headlines, buttons, labels, numerals. Running text never goes wide.
+**The No Kicker Rule.** No eyebrow or kicker label sits above a heading. Spaced capitals belong to buttons, nav, form labels, captions and the hero firm line, which sits below the name.
 
 ## Layout
 
-A single centered column, `min(100% - 2 × clamp(1.25rem, 4vw, 3.5rem), 78rem)`, holds every section. Sections pad clamp(4rem, 9vw, 7.5rem) top and bottom. Inside them, content sits in asymmetric two-column grids (5/7, 4/8, 6/5) whose lead column (heading, intro, portrait) is sticky below the rail on desktop. The spacing scale is 0.5 / 0.75 / 1 / 1.5 / 2 / 3rem, with clamp()ed gaps for column gutters.
+The content container is min(100% minus clamp(1.25rem, 5vw, 4rem) per side, 76rem), centered. The header row is wider (90rem) with tighter side margins. Sections are padded clamp(4.5rem, 10vw, 8rem) top and bottom on a 4px-based scale (s1–s8, 0.25rem to 4.5rem).
 
-The first viewport is a gate: two corten posts at the edges, a beam carrying the cut name, an arch opening onto the photograph, and a bone sign hung on two chains, centered and overlapping the arch. The next section's heading starts just below the fold.
+Compositions are asymmetric two-column splits: portrait and story at 5:7 (the portrait sticky beside the copy), contact info and the message form at 6:5, and section heads with the heading left and a short note right-aligned at the bottom. Cards use three-column grids (services, the search finder) and two-column grids (pitches, facts). The gallery is a four-column tile grid with one 2×2 feature tile and two wide tiles.
 
-Breakpoints: at 1080px the search, services, and contact grids stack and sticky columns release. At 860px the nav collapses behind a menu button into a dropdown sheet, the rail shrinks to 3.75rem, and the gallery goes to two columns. At 600px gauges and pitches stack, the rail call shows its icon only, and the gallery becomes one column.
+The hero fills calc(92svh − header), or 86svh on phones, with content anchored bottom-left over a scrim weighted to that corner.
 
-**The One View Rule.** The cut letters and the arch opening show one photograph in shared coordinates. The script sizes and positions the photograph so the Spring Mountains ridge (43% down the photo) runs through the name's lower line, and recalculates on resize and font load. Never give the letters and the arch separate images or independent crops.
+Responsive steps: 1100px hides the header phone text; 960px stacks contact and services (services become a 2:3 heading/text row); 860px switches to the menu button with a clip-path drop panel, a 4rem header, and two-column finder and gallery; 600px goes single-column, stacks the hero buttons full width, and hides the header Call label to leave an icon button.
+
+### Named Rules
+**The One Full-Bleed Rule.** The hero is the only full-bleed photograph. Gallery sources are only 1024px wide, so every other image stays inside the container at 1024px or smaller.
+
+**The No Metric Row Rule.** Proof is stated in sentences (the lede), never as a row of stats or metric tiles.
 
 ## Elevation & Depth
 
-Depth is physical. Sheets join at seams, plates sit proud of the sheet with a soft cast shadow and a bevel, cut edges have a dark lip above and a lit lip below, and the gate posts throw shadow inward. There is no generic card shadow.
+The system is flat. Depth comes from ground changes (white, stone, navy) and 1px hairlines. Two soft, navy-tinted, negative-spread shadows exist, both under surfaces that float over other content.
 
 ### Shadow Vocabulary
-- **Seam** (`box-shadow: inset 0 3px 0 rgba(12,5,2,.7), inset 0 4px 0 rgba(255,190,140,.12)`): the top edge of every steel and blackened-steel section.
-- **Plate** (`box-shadow: 0 14px 30px -14px rgba(0,0,0,.75), inset 0 1px 0 rgba(255,220,190,.12), inset 0 -1px 0 rgba(0,0,0,.4)`): every riveted plate.
-- **Cut Edge** (`filter: drop-shadow(0 -2px 0 rgba(10,4,1,.75)) drop-shadow(0 2px 0 rgba(255,196,150,.3))`): the cut name's thickness.
-- **Call Button** (`box-shadow: 0 8px 18px -8px rgba(0,0,0,.6), inset 0 1px 0 rgba(255,255,255,.45), inset 0 -2px 0 rgba(120,60,0,.3)`): the lit amber plate.
-- **Tile** (`box-shadow: 0 12px 26px -14px rgba(0,0,0,.8)`): gallery photographs.
-- **Post** (`box-shadow: ±10px 0 18px -8px rgba(0,0,0,.55)`): gate posts, cast inward.
+- **Finder lift** (`box-shadow: 0 24px 48px -32px rgba(15, 42, 68, .35)`): the white search card on the stone section.
+- **Panel drop** (`box-shadow: 0 20px 30px -20px rgba(15, 42, 68, .3)`): the mobile nav panel below the header.
+
+The hero uses a photographic scrim (bottom and left navy-black gradients), not a shadow, to hold white text.
 
 ### Named Rules
-**The Seam Rule.** Sections never meet at a flat color change. Each sheet opens with a seam: a 3px dark inset line with a 1px lit lip beneath it.
+**The Flat-By-Default Rule.** Surfaces are flat. A shadow appears only beneath a surface that floats over other content, and it is always soft and navy-tinted. No hard or offset shadows.
 
 ## Shapes
 
-Square sheet metal. The only radius is 2px (buttons, inputs, the menu button, lightbox controls); plates, tiles, and sections are sharp. Recurring forms: rivets (radial-gradient heads at all four plate corners, darker on bone), the elliptical arch mask, two chain links of ellipse rings, and the MM brand, drawn as square-capped mitered strokes.
+Square corners throughout (0 radius): buttons, cards, inputs, the menu button, lightbox controls and photos. Lines are 1px: header and divider hairlines in sand, card-top rules in gold, button outlines in navy or translucent white. Photos are plain rectangles with no frames, cropped by aspect ratio (3:2 tiles, 4:5 portrait). Icons are 24px-grid line SVGs with a 1.8 stroke and round caps.
 
-**The Brand Rule.** The MM branding-iron mark appears at most once per section, beside or above the section heading, as a burned mark: a blurred scorch stroke under a dark core, darker than the steel around it. It is never a bullet, list marker, divider, or icon, and it is never lit.
+### Named Rules
+**The Square Corner Rule.** Nothing is rounded. Form comes from 1px lines and white space.
 
 ## Components
 
 ### Buttons
-Stamped plates: square, heavy, wide uppercase.
-- **Shape:** near-square (2px), minimum 3rem tall (2.5rem small), with an icon at 1.1em where present.
-- **Call:** amber fill, ink text, Call Button shadow. On hover it lights to amber-hi. On press it moves down 1px. The sign variant spans the plate, with the label left and the tabular number right.
-- **Bone:** bone fill with an inset bottom edge, for non-call submits (search). On hover it turns lit bone.
-- **Iron:** iron fill, bone text, for actions on bone plates (send, copy). On hover it turns deep plate rust.
-- **Focus:** the global amber outline (2px, 3px offset).
+Quiet and assured: uppercase spaced Archivo in square blocks.
+- **Shape:** square (0), 3.25rem minimum height, 0.8rem × 1.6rem padding; the small size is 2.6rem with 0.72rem type. An optional 1.05rem leading line icon sits 0.6rem from the label.
+- **Navy (primary):** navy fill, white label; hover goes to Night Navy.
+- **White:** white fill, navy label, used on the hero and navy bands; hover goes to stone.
+- **Ghost:** transparent with a 1px white border at 75%, used on the hero; hover adds a 12% white fill and a solid white border.
+- **Outline:** 1px navy border and navy label; hover fills navy with a white label.
+- **Transitions:** background, color and border over 0.25s on the shared ease.
 
-### Plates (signature)
-- **Steel plate:** deep plate rust over corten at 600px with a 160° wash, Plate shadow, and four rivets. Used for the portrait, gauges, and search panel.
-- **Bone plate:** bone with a faint light-to-warm gradient, ink text, and dark rivets. Used for the hanging sign, badges strip, and message form. No noise or texture.
-- **Gauges:** three identical steel plates side by side, each with a 3px lit-rust top rule, a numeral, a label, and a sage note. They stack as rows under 600px.
-
-**The Clean Bone Rule.** Bone reading plates carry no grain, noise, or corten texture. Texture belongs to the steel; the bone plate is where the eye rests.
+### Cards / Containers
+- **Corner Style:** square (0).
+- **Pitch and service cards:** no fill or border box, only a 1px top rule (gold on white, soft gold on navy) with 1.5rem above the serif title.
+- **Search finder:** white card, finder lift shadow, clamp(1.75rem, 4vw, 3rem) padding, three-column field grid.
+- **Message panel:** stone fill, no border or shadow, clamp(1.75rem, 4vw, 2.75rem) padding.
 
 ### Inputs / Fields
-- **Instrument fields (search):** a tight 3-column grid with 1px dark gutters, with no field borders and no radius. Each cell is iron at 72% with a sage label over a bone value. On focus the cell darkens to 95% and an inset amber underline (2px) appears. Selects use a sage chevron.
-- **Message fields (on bone):** 1px ink border at 35%, 2px radius, lit bone at 70%. On focus the border turns ink with a 3px amber halo. When invalid, the border is error rust with an 18% error halo, and the error text appears below.
+- **Style:** underline only: no box, transparent fill, square, a 1px bottom stroke, 2.75rem minimum height, text in ink at 1rem. Labels sit above in Label Small, slate. Selects use a slate chevron drawn as a line SVG.
+- **Focus:** the underline turns navy and doubles to 2px with a 1px navy under-shadow. There is no outline ring on fields.
+- **Error:** the underline and its double turn Brick, with a 0.85rem Brick message below. The required marker is a Brick asterisk.
+- **Composed-message textarea:** the only boxed field, with a 1px border on white.
 
 ### Navigation
-The sticky rail is 4.25rem tall (3.75rem at 860px and below), iron at 92% with a 10px backdrop blur and a lit-rust hairline below. The logo is inverted to bone. Nav links use wide uppercase label type in dim bone. On hover and for the current page, the link turns bone with a 2px lit-rust underline. The rail ends with a small call button. On mobile, a bordered menu button opens an iron sheet that unrolls with a clip-path wipe (0.35s) and has a rust bottom edge.
+- **Desktop:** a sticky white header (96% opacity) with a 1px sand bottom rule and a 5rem row: the logo left, then Label-style links in slate, the phone number as navy text, and a small navy Call button. Hover and current links turn navy, and a 1px gold underline scales in from the left over 0.35s.
+- **Mobile (≤860px):** a 4rem header with a 2.75rem square menu button (1px sand border). The panel drops by clip-path from the header, with full-width rows divided by sand hairlines and the current link in navy at 600. Escape and outside clicks close it.
 
-### Gallery Tiles and Lightbox
-Tiles are a 4-column photo grid (2 at 860px, 1 at 600px) with one 2×2 feature tile. Photos are slightly desaturated at rest and scale to 1.04 on hover or focus. A bone tag sits flush left near the bottom. The lightbox is a native dialog over 90% iron with blur, with square bone controls (3rem).
+### Focus
+**The Focus Ground Rule.** The focus ring is a 2px solid navy outline at 3px offset on light grounds, and soft gold on navy bands and on the hero.
 
-### Ledger
-Services are a numbered list without visible markers, with bone hairline rules (22%) between entries, wide titles, and dim body text.
+### Hero Nameplate (signature)
+A full-bleed valley photograph with a bottom-left scrim. Marci's name is set in Display, white. A 5.5rem, 1px soft-gold rule sits above it. Below come the serif tenure line, then the firm line in spaced capitals with a soft-gold separator dot, then a white button and a ghost button.
+
+### Gallery Tile and Lightbox
+Tiles are buttons on a stone placeholder with a zoom-in cursor. On hover or focus the photo scales to 1.035 over 0.9s, and an uppercase slate caption sits below. The lightbox is a native dialog on a 92% navy-black backdrop, with square white 3rem prev, next and close controls.
+
+### Motion
+**The Single Entrance Rule.** There is one authored motion. On load, the hero gold rule draws in from the left (scaleX, 1.2s after a 0.2s delay), and the name, tenure, firm line and actions rise 12px and fade in, staggered 0, 0.1, 0.18 and 0.28s over 1s. Everything else is state feedback: hovers, the nav underline, the tile zoom, the menu panel and the lightbox fade. All motion uses cubic-bezier(.16, 1, .3, 1). Under prefers-reduced-motion, all animation and transitions are removed and scrolling is instant.
 
 ## Do's and Don'ts
 
 ### Do:
-- **Do** build every new section on lit steel or blackened steel, alternating, and open it with the Seam.
-- **Do** put close reading (forms, signs, badges) on clean bone plates with four rivets.
-- **Do** use amber for call actions only, plus focus, selection, and caret.
-- **Do** keep the cut name and the arch on the one shared photograph, aligned so the ridge runs through the name.
-- **Do** set phone numbers and figures in tabular numerals.
-- **Do** keep corners at 2px or square.
-- **Do** honor reduced motion: the sun sweep and the sign swing resolve to their end states and stay static.
+- **Do** keep grounds white and warm stone, with navy only on bounded brand bands and buttons.
+- **Do** use gold only as 1px rules, underlines and small marks: Ridge Gold on light grounds, Soft Gold on navy and on photos.
+- **Do** set names and headings in Bodoni Moda at 400, and everything else in Archivo at normal width.
+- **Do** keep every corner square and every line 1px.
+- **Do** use underline-only fields with labels above, turning navy on focus and Brick on error.
+- **Do** use a navy focus ring on light grounds and soft gold on navy and on the hero.
+- **Do** state proof in sentences, using the reference figures as given.
+- **Do** keep a field's rest-state underline at 3:1 or better against its ground.
 
 ### Don't:
-- **Don't** use amber for navigation states, headings, borders, or decoration.
-- **Don't** add grain, noise, or corten texture to bone plates.
-- **Don't** use the MM brand as a bullet, icon, or repeated ornament, or more than once in a section.
-- **Don't** set any type other than the cut name above 6rem.
-- **Don't** paint the name over the photograph or give it a solid fill; it is cut through the steel.
-- **Don't** introduce a second typeface or a serif display name.
-- **Don't** use rounded cards or a generic floating card shadow; depth comes from plates, seams, and bevels.
+- **Don't** set gold text on white, or use gold as a fill.
+- **Don't** put eyebrow or kicker labels above headings.
+- **Don't** build stats or metric rows.
+- **Don't** run any photo full-bleed except the hero, and don't upscale gallery sources past 1024px.
+- **Don't** add rounded corners, boxed form fields (except the composed-message textarea), hard or offset shadows, or framed photos.
+- **Don't** add a second authored animation or scroll-triggered reveals, and don't leave anything moving under reduced motion.
+- **Don't** reintroduce themed or costume materials or dark full-page grounds.

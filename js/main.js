@@ -7,41 +7,8 @@
   // Set to Marci's address to send the contact form by email instead of SMS / compose.
   const EMAIL = '';
 
-  /* ---------- Gate: one photo, seen through the letters and the arch ----------
-     The letters and the opening share the photo's coordinates, sized so the
-     Spring Mountains ridge runs through the name. */
-  const gate = document.querySelector('.gate');
-  const gateName = document.querySelector('.gate__name');
-  if (gate && gateName) {
-    const IMG_W = 2560, IMG_H = 1700;
-    const RIDGE = 0.43;   // ridge line, as a fraction of photo height
-    const FOCUS_X = 0.47; // horizontal focus
-    const align = () => {
-      const g = gate.getBoundingClientRect();
-      const n = gateName.getBoundingClientRect();
-      const W = g.width, H = g.height;
-      // peaks rise into the top line; the ridge runs through the lower line
-      const targetY = (n.top - g.top) + n.height * 0.5;
-      let scale = Math.max(W / IMG_W, H / IMG_H);
-      let sh = IMG_H * scale;
-      if (targetY - RIDGE * sh > 0) { scale = targetY / (RIDGE * IMG_H); sh = IMG_H * scale; }
-      if (targetY + (1 - RIDGE) * sh < H) { scale = (H - targetY) / ((1 - RIDGE) * IMG_H); sh = IMG_H * scale; }
-      const sw = IMG_W * scale;
-      const x0 = Math.min(0, Math.max(W - sw, W / 2 - sw * FOCUS_X));
-      const y0 = targetY - RIDGE * sh;
-      gate.style.setProperty('--scene-size', `${sw}px ${sh}px`);
-      gate.style.setProperty('--scene-pos', `${x0}px ${y0}px`);
-      gateName.style.setProperty('--clip-size', `${sw}px ${sh}px`);
-      gateName.style.setProperty('--clip-pos', `${x0 - (n.left - g.left)}px ${y0 - (n.top - g.top)}px`);
-    };
-    align();
-    if (document.fonts && document.fonts.ready) document.fonts.ready.then(align);
-    if ('ResizeObserver' in window) new ResizeObserver(align).observe(gate);
-    else window.addEventListener('resize', align);
-  }
-
   /* ---------- Mobile menu ---------- */
-  const menuBtn = document.querySelector('.rail__menu');
+  const menuBtn = document.querySelector('.menu-btn');
   const nav = document.getElementById('site-nav');
   if (menuBtn && nav) {
     const setOpen = (open) => {
@@ -54,14 +21,14 @@
       if (e.key === 'Escape' && nav.classList.contains('is-open')) { setOpen(false); menuBtn.focus(); }
     });
     document.addEventListener('click', (e) => {
-      if (nav.classList.contains('is-open') && !e.target.closest('.rail')) setOpen(false);
+      if (nav.classList.contains('is-open') && !e.target.closest('.header')) setOpen(false);
     });
   }
 
   /* ---------- Current section in nav ---------- */
-  const navLinks = [...document.querySelectorAll('.rail__nav a')];
-  const sectionFor = { '#top': document.querySelector('.gate'), '#search': document.getElementById('search'),
-    '#services': document.getElementById('services'), '#sold': document.getElementById('sold') };
+  const navLinks = [...document.querySelectorAll('.nav a')];
+  const sectionFor = { '#top': document.querySelector('.hero'), '#search': document.getElementById('search'),
+    '#services': document.getElementById('services'), '#about': document.getElementById('about') };
   if ('IntersectionObserver' in window) {
     const io = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
@@ -106,7 +73,7 @@
       const src = tiles[index].querySelector('img');
       img.src = src.currentSrc || src.src;
       img.alt = src.alt;
-      tag.textContent = tiles[index].querySelector('.tile__tag').textContent;
+      tag.textContent = tiles[index].parentElement.querySelector('.tile__cap').textContent;
       count.textContent = `${index + 1} / ${tiles.length}`;
     };
 

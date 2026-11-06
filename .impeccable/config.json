@@ -4,31 +4,13 @@
     "ignoreFiles": [],
     "ignoreValues": [
       {
-        "rule": "gradient-text",
-        "value": "*",
-        "files": [
-          "index.html"
-        ],
-        "createdAt": "2026-11-06T09:23:53.592Z",
-        "reason": "Direction contract (user chose Ranch Gate): the name is cut steel showing the photo; the gradient layer is a one-time sun sweep"
-      },
-      {
-        "rule": "gray-on-color",
-        "value": "*",
-        "files": [
-          "index.html"
-        ],
-        "createdAt": "2026-11-06T09:23:53.631Z",
-        "reason": "Sage (#aab595) is the world's tinted label color on steel, measured ~6.8:1"
-      },
-      {
         "rule": "cramped-padding",
         "value": "*",
         "files": [
           "index.html"
         ],
-        "createdAt": "2026-11-06T09:23:53.682Z",
-        "reason": "Verified in 1440/768/390 renders: sections center a padded .wrap; beam and ledger rows have visible inset"
+        "createdAt": "2026-11-06T10:17:03.251Z",
+        "reason": "False positive: .search and .services center a padded .wrap (checked at 1440/768/390 renders)"
       }
     ]
   }
